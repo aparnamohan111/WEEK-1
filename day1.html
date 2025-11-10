@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+<style>
+    .page{
+       
+        margin-left: 50px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .navbar{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:24px;
+        margin-bottom:28px;
+    }
+    .nav-links{
+        display:flex;
+        gap:50px;
+        align-items:center;
+        padding-right: 50px;
+    }
+    .nav-links a{
+        color:gray;
+        text-decoration:none;
+        font-size:20px}
+    .nav-links a.active{
+        font-weight:600;
+        color: black;
+    }
+    .nav-links a:hover{
+        color: rgb(66, 192, 192);
+    }
+    .main{
+        display: flex;
+        gap: 200px;
+    }
+    .text h1{
+        font-weight: lighter;
+        line-height: 70px;
+        letter-spacing: 2px;
+        font-size: 50px;
+        margin-top: 70px;
+    }
+    .font{
+        color: rgb(66, 192, 192);
+    }
+    .para{
+        font-weight: bold;
+    }
+    .text p{
+        color: gray;
+        word-spacing: 4px;
+        line-height: 25px;
+    }
+    .image{
+        margin-top: -50px;    
+    }
+    .btn {
+        display: inline-flex;    
+        align-items: center;         
+        gap: 8px;                    
+        padding: 10px 16px;
+        background-color: #1bb4a2;   
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+        cursor: pointer;
+    
+    }
+    .btn:hover{
+        background-color: #023939;
+    }
+
+</style>
+
+</head>
+<body>
+    <div class="page">
+        
+        <!-- NAV BAR -->
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo" width="100px" height="100px">
+            </div>
+            
+            <nav class="nav-links">
+                <a class="active" href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Training</a>
+            </nav>
+        </div>
+        <!-- main -->
+        <div class="main">
+            <div class="text">
+                <h1>WORKOUTS MADE <br><span class="font">EXCLUSIVE</span> FOR YOU!</h1>
+                <p>We create <span class="para">exlusive and unique workouts </span> for you. 
+                <br> Invest in your body and <span class="para">get much more performance</span> 
+                <br> and quality of life.</p>
+                <button class="btn"><img src="images/whatsapp-icon.svg" alt="icon">Start now</button>
+            </div>
+            <div class="image">
+                <img src="images/img.svg" alt="images" height="500px">
+            </div>
+            
+        </div>
+        <!-- last section-->
+            <p style="text-align: center;margin-top: 20px;">send us a message <span class="para">@treine.me</span></p>
+            <img src="images/balls.svg" alt="balls" style="position: absolute;right: 10px;">   
+    </div>
+
+</body>
+</html>
