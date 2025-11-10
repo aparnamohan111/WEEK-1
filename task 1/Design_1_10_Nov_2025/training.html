@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .page{
+       
+        margin-left: 50px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .navbar{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:24px;
+        margin-bottom:28px;
+    }
+    .nav-links{
+        display:flex;
+        gap:50px;
+        align-items:center;
+        padding-right: 50px;
+    }
+    .nav-links a{
+        color:gray;
+        text-decoration:none;
+        font-size:20px}
+    .nav-links a.active{
+        font-weight:600;
+        color: black;
+    }
+    .nav-links a:hover{
+        color: rgb(66, 192, 192);
+    }
+    .image img{
+        width: 300px;
+        height: 300px;
+        padding: 40px;
+        margin-left: 80px;
+        margin-top: 20px;
+        box-shadow: 10px 10px 10px 10px;
+        
+    }
+    .font{
+        color: rgb(66, 192, 192);
+    }
+    h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="page">
+        
+        <!-- NAV BAR -->
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo" width="100px" height="100px">
+            </div>
+            
+            <nav class="nav-links">
+                <a  id="homeLink">Home</a>
+                <a id="aboutLink">About</a>
+                <a class="active" id="trainingLink">Training</a>
+            </nav>
+        </div>
+        <h1>YOU DON'T HAVE TO BE <span class="font">EXTREME</span> , JUST CONSITENT.</h1>
+        <div class="image">
+            <img src="images/gym 1.jpg" alt="gym1" >  
+            <img src="images/gym 2.jpg" alt="gym2">
+            <img src="images/gym 3.jpg" alt="gym3">
+        </div>
+        
+    </div>
+<script>
+  
+  const homeLink = document.getElementById("homeLink");
+  const aboutLink = document.getElementById("aboutLink");
+  const trainingLink = document.getElementById("trainingLink");
+
+  homeLink.addEventListener("click", () => {
+    window.location.href = "index.html"; 
+  });
+
+  aboutLink.addEventListener("click", () => {
+    window.location.href = "about.html"; 
+  });
+
+  trainingLink.addEventListener("click", () => {
+    window.location.href = "training.html"; 
+  });
+</script>
+    
+</body>
+</html>

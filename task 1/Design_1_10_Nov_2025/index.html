@@ -89,9 +89,9 @@
             </div>
             
             <nav class="nav-links">
-                <a class="active" href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Training</a>
+                <a class="active" id="homeLink">Home</a>
+                <a id="aboutLink">About</a>
+                <a id="trainingLink">Training</a>
             </nav>
         </div>
         <!-- main -->
@@ -112,6 +112,24 @@
             <p style="text-align: center;margin-top: 20px;">send us a message <span class="para">@treine.me</span></p>
             <img src="images/balls.svg" alt="balls" style="position: absolute;right: 10px;">   
     </div>
+<script>
+  
+  const homeLink = document.getElementById("homeLink");
+  const aboutLink = document.getElementById("aboutLink");
+  const trainingLink = document.getElementById("trainingLink");
+
+  homeLink.addEventListener("click", () => {
+    window.location.href = "index.html"; 
+  });
+
+  aboutLink.addEventListener("click", () => {
+    window.location.href = "about.html"; 
+  });
+
+  trainingLink.addEventListener("click", () => {
+    window.location.href = "training.html"; 
+  });
+</script>
 
 </body>
 </html>
