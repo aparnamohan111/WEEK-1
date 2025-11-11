@@ -1,0 +1,84 @@
+.top{
+    background-color: black;
+    text-align: center;
+    color: white;
+    height: 3cqw;
+}
+.top a {
+    color: white;
+}
+.navbar-brand{
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    padding-left: 100px;
+
+}
+.navbar-nav{
+    padding-left: 20px;
+}
+
+.nav-link{
+    color: black;
+}
+
+.form-control {
+    width: 500px;
+    height: 50px;
+    border :none ;
+    background-color: rgb(232, 225, 225);
+    border-radius: 10px;
+}
+
+.icons{
+    display: flex;
+    
+    gap: 20px;
+}
+.subtitle{
+    font-size: 1px;
+}
+.partA{
+    padding: 100px;
+    display: flex;
+
+}
+.partA h1{
+    font-weight: bolder;
+}
+.heading{
+    font-size: 50px;
+}
+.btn{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    width: 200px;
+    margin: 30px;
+}
+.part2{
+    margin-top: -150px;
+    margin-left: 150px;
+}
+.partB{
+    background-color: black;
+    display: flex;
+    gap: 100px;
+    color: white;
+    height: 100px;
+    align-items: center;
+}
+.dress{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    gap: 60px;
+    margin-left: 150px;
+   
+}
+.partC h1{
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
