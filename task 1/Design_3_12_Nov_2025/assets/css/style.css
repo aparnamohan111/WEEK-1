@@ -271,3 +271,16 @@
 background-color: #bcbdbe;
 height: 350px;
 }
+
+.A{
+    display:flex;
+    gap: 50px;
+    margin-left: 100px;
+}
+
+.tshirt img{
+    width: 170px;
+    height: 180px;
+    gap: 30px;
+     
+}
