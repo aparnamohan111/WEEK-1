@@ -1210,3 +1210,35 @@ height: 350px;
   .product-actions { flex-direction: column; align-items: stretch; gap:10px; }
   .add-to-cart { width: 100%; text-align:center; }
 }
+
+
+/* Simple styles for the search results dropdown */
+      #search-results {
+        position: absolute;
+        z-index: 2000;
+        background: #fff;
+        border: 1px solid #ddd;
+        width: 320px;
+        max-height: 320px;
+        overflow-y: auto;
+        display: none;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      }
+
+      #search-results .result-item {
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+
+      #search-results .result-item:hover {
+        background: #f8f9fa;
+      }
+
+      /* make sure the container around the nav form is positioned so absolute dropdown aligns */
+      .nav-search-wrapper {
+        position: relative;
+      }
+
+      @media (max-width: 576px) {
+        #search-results { width: 240px; }
+      }
