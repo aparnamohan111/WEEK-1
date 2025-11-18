@@ -1242,3 +1242,7 @@ height: 350px;
       @media (max-width: 576px) {
         #search-results { width: 240px; }
       }
+
+/* no-results message */
+#noResults { display: none; }
+#noResults.show { display: block; }

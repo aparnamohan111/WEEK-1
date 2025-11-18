@@ -34,17 +34,17 @@
                             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                     <li><a class="dropdown-item" href="product.html">Men</a></li>
-                                    <li><a class="dropdown-item" href="#">Women</a></li>
-                                    <li><a class="dropdown-item" href="#">Kids</a></li>
+                                    <li><a class="dropdown-item" href="category.html">Women</a></li>
+                                    <li><a class="dropdown-item" href="category.html">Kids</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link " aria-current="page" href="#">On Sale</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">New Arrials</a></li>
-                            <li class="nav-item"><a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Brands</a></li>
+                            <li class="nav-item"><a class="nav-link" href="category.html">New Arrials</a></li>
+                            <li class="nav-item"><a class="nav-link " href="category.html" tabindex="-1" aria-disabled="true">Brands</a></li>
                         </ul>
                          
                         <div class="icons">
-                             <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                            <a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
                             <i class="fa-regular fa-user" style="color: #000000;"></i>   
                         </div>   
                     </div>
@@ -55,56 +55,41 @@
                 <p>Home  > Shop > Men > T-shirt ></p>
                 <div class="A" >
                     <div class="tshirt">
-   <img id="product-main-image" src="" alt="">
-</div>
-<div class="product" id="product-card">
+                        <img id="product-main-image" src="" alt="">
+                    </div>
+                    <div class="product" id="product-card">
+                        <h1 id="product-title"></h1>
+                        <div class="rating" aria-label="rating 4.5 out of 5">
+                            <span aria-hidden="true">★ ★ ★ ★ ☆</span>
+                            <span class="muted">4.5/5</span>
+                        </div>
+                            <p class="price">
+                                <span id="price"></span> 
+                                <del>$<span id="old-price"></span></del>
+                            </p>
+                            <p class="lead">This graphic t-shirt is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>
+                            <hr><hr>
+                            <p><strong>Choose Size</strong></p>
+                            <div class="sizes" id="size-list" role="radiogroup" aria-label="Choose size">
+                            <button class="size-btn" data-size="Small" role="radio" aria-checked="false">Small</button>
+                            <button class="size-btn" data-size="Medium" role="radio" aria-checked="false">Medium</button>
+                            <button class="size-btn" data-size="Large" role="radio" aria-checked="false">Large</button>
+                            <button class="size-btn" data-size="X-Large" role="radio" aria-checked="false">X-Large</button>
+                        </div>
+                            <hr>
 
-    <h1 id="product-title"></h1>
+                            <div class="product-actions">
+                                <div class="quantity-selector" aria-label="Quantity selector">
+                                    <button class="qty-btn" id="minus" aria-label="Decrease quantity">−</button>
+                                    <span class="qty-value" id="qty">0</span>
+                                    <button class="qty-btn" id="plus" aria-label="Increase quantity">+</button>
+                                    </div>
 
+                                    <a id="addToCart" class="add-to-cart" href="cart.html" role="button">Add to cart</a>
+                                        <span class="message" id="msg">Added ✓</span>
+                                    </div>
 
-    <div class="rating" aria-label="rating 4.5 out of 5">
-      <span aria-hidden="true">★ ★ ★ ★ ☆</span>
-      <span class="muted">4.5/5</span>
-    </div>
-
-    <p class="price">
-   <span id="price"></span> 
-   <del>$<span id="old-price"></span></del>
-</p>
-
-
-    <p class="lead">This graphic t-shirt is perfect for any occasion. Crafted from a soft and
-      breathable fabric, it offers superior comfort and style.</p>
-
-    <hr>
-
-    
-
-    <hr>
-
-    <p><strong>Choose Size</strong></p>
-    <div class="sizes" id="size-list" role="radiogroup" aria-label="Choose size">
-      <button class="size-btn" data-size="Small" role="radio" aria-checked="false">Small</button>
-      <button class="size-btn" data-size="Medium" role="radio" aria-checked="false">Medium</button>
-
-      <button class="size-btn" data-size="Large" role="radio" aria-checked="false">Large</button>
-      <button class="size-btn" data-size="X-Large" role="radio" aria-checked="false">X-Large</button>
-    </div>
-
-    <hr>
-
-    <div class="product-actions">
-      <div class="quantity-selector" aria-label="Quantity selector">
-        <button class="qty-btn" id="minus" aria-label="Decrease quantity">−</button>
-        <span class="qty-value" id="qty">1</span>
-        <button class="qty-btn" id="plus" aria-label="Increase quantity">+</button>
-      </div>
-
-      <a id="addToCart" class="add-to-cart" href="cart.html" role="button">Add to cart</a>
-      <span class="message" id="msg">Added ✓</span>
-    </div>
-
-  </div>
+                                    </div>
                 </div>
                 <div class="partD">
                     <h3 style="margin-top: 105px;margin-left: 125px ; margin-bottom: 50px;">All REVIEW</h3>

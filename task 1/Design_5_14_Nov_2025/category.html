@@ -36,29 +36,29 @@
                             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                     <li><a class="dropdown-item" href="product.html">Men</a></li>
-                                    <li><a class="dropdown-item" href="#">Women</a></li>
-                                    <li><a class="dropdown-item" href="#">Kids</a></li>
+                                    <li><a class="dropdown-item" href="category.html">Women</a></li>
+                                    <li><a class="dropdown-item" href="category.html">Kids</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link " aria-current="page" href="#">On Sale</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">New Arrials</a></li>
-                            <li class="nav-item"><a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Brands</a></li>
+                            <li class="nav-item"><a class="nav-link" href="category.html">New Arrials</a></li>
+                            <li class="nav-item"><a class="nav-link " href="category.html" tabindex="-1" aria-disabled="true">Brands</a></li>
                         </ul>
-                       <!-- NAV search (replace your current empty space where search should be) -->
-<div class="nav-search-wrapper" style="padding-right: 50px; position: relative; max-width: 360px;">
-  <form class="d-flex" id="search-form" onsubmit="return false;">
-    <input id="search-bar" class="form-control" type="search"
-           placeholder="Search for products.." aria-label="Search"
-           autocomplete="off" style="width:100%;">
-  </form>
+<!-- NAV search (replace your current empty space where search should be) -->
+                        <div class="nav-search-wrapper" style="padding-right: 50px; position: relative; max-width: 360px;">
+                            <form class="d-flex" id="search-form" onsubmit="return false;">
+                                <input id="search-bar" class="form-control" type="search"
+                                    placeholder="Search for products.." aria-label="Search"
+                                    autocomplete="off" style="width:100%;">
+                            </form>
 
-  <!-- dropdown rendered by main.js -->
-  <div id="search-results" role="listbox" aria-label="Search results"
-       style="display:none; position:absolute; left:0; right:0; background:#fff; border:1px solid #ddd; max-height:280px; overflow:auto; z-index:1050;"></div>
-</div>
+<!-- dropdown rendered by main.js -->
+                            <div id="search-results" role="listbox" aria-label="Search results"
+                                style="display:none; position:absolute; left:0; right:0; background:#fff; border:1px solid #ddd; max-height:280px; overflow:auto; z-index:1050;"></div>
+                            </div>
 
                         <div class="icons">
-                             <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                             <a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
                             <i class="fa-regular fa-user" style="color: #000000;"></i>   
                         </div>   
                     </div>
@@ -137,32 +137,18 @@
                         </div>
                         <hr>
                        <h3>Dress Style</h3>
-<div class="style-list">
-
-    <a href="#" class="filter-style" data-style="casual">
-        Casual <span>></span>
-    </a><br>
-
-    <a href="#" class="filter-style" data-style="formal">
-        Formal <span>></span>
-    </a><br>
-
-    <a href="#" class="filter-style" data-style="party">
-        Party <span>></span>
-    </a><br>
-
-   
-
-
-    <a href="#" class="filter-style" data-style="sports">
-        Sports <span>></span>
-    </a>
-
-</div>
-<hr>
-
-                        <button class="apply">Apply Filter</button>    
-                    </div>
+                            <div class="style-list">
+                                <a href="#" class="filter-style" data-style="casual">Casual <span>></span></a><br>
+                                <a href="#" class="filter-style" data-style="formal">Formal <span>></span></a><br>
+                                <a href="#" class="filter-style" data-style="party">Party <span>></span></a><br>
+                                <a href="#" class="filter-style" data-style="sports">Sports <span>></span></a>
+                            </div>
+                            <hr>
+                            <div style="display:flex; gap:px;">
+                                <button id="applyFilters" class="apply btn btn-sm btn-primary">Apply Filter</button>
+                                <button id="resetFilters" class="apply btn btn-sm btn-primary">Reset Filters</button>
+                            </div>    
+                        </div>
                        
 <!--Casual-->
                     <div class="casual">
@@ -177,6 +163,7 @@
                         <option value="benz">Newest Arrivals</option>
                     </select></p>
                     </div>
+                    
                         <div class="tselling">
                             <div class="tselling1" data-category="tshirt" data-price="150" data-colors="black, white" data-sizes="xs,s,m,l,xl" data-product-name="gradient graphic t-shirt">
 
@@ -343,6 +330,26 @@
         </div>
 
         <script>
+            
+document.addEventListener('DOMContentLoaded', function () {
+  const params = new URLSearchParams(window.location.search);
+  const name = params.get('name');        // gradient graphic t-shirt
+  const category = params.get('category');
+  const price = params.get('price');
+  const colors = params.get('colors');
+  const sizes = params.get('sizes');
+
+  // Example: inject into DOM (make elements with these IDs)
+  if (name) document.getElementById('product-name').textContent = decodeURIComponent(name);
+  if (category) document.getElementById('product-category').textContent = decodeURIComponent(category);
+  if (price) document.getElementById('product-price').textContent = '$' + price;
+  if (colors) document.getElementById('product-colors').textContent = colors;
+  if (sizes) document.getElementById('product-sizes').textContent = sizes;
+
+  // If you need full product object, you can recompose from params
+});
+
+
 (function () {
   // helper to set input and trigger your main.js handler
   function applySearchTerm(q) {
