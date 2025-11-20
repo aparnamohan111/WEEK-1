@@ -51,7 +51,7 @@
                                     placeholder="Search for products.." aria-label="Search"
                                     autocomplete="off" style="width:100%;">
                             </form>
-
+                            
 <!-- dropdown rendered by main.js -->
                             <div id="search-results" role="listbox" aria-label="Search results"
                                 style="display:none; position:absolute; left:0; right:0; background:#fff; border:1px solid #ddd; max-height:280px; overflow:auto; z-index:1050;"></div>
@@ -145,7 +145,9 @@
                             </div>
                             <hr>
                             <div style="display:flex; gap:px;">
-                                <button id="applyFilters" class="apply btn btn-sm btn-primary">Apply Filter</button>
+                              
+                                <button id="applyFilters" class="apply btn btn-sm btn-primary">Apply Filters</button>
+
                                 <button id="resetFilters" class="apply btn btn-sm btn-primary">Reset Filters</button>
                             </div>    
                         </div>
@@ -153,19 +155,10 @@
 <!--Casual-->
                     <div class="casual">
                     <h2 style="margin-left:150px ;">Causal</h2>
-                    <div style="display: flex; gap: 10px; margin-bottom: 10px;">
-                        <p style="margin-left: 500px;">Showing 1 - 10 of 100 products</p>
-                    <p>Sort by:
-                    <select style="border: none;">
-                        <option value="volvo">Most Popuar</option>
-                        <option value="bmw">Price</option>
-                        <option value="audi">Customers Review</option>
-                        <option value="benz">Newest Arrivals</option>
-                    </select></p>
-                    </div>
+                    
                     
                         <div class="tselling">
-                            <div class="tselling1" data-category="tshirt" data-price="150" data-colors="black, white" data-sizes="xs,s,m,l,xl" data-product-name="gradient graphic t-shirt">
+                            <div class="tselling1" data-category="tshirt" data-price="150" data-colors="black, white" data-sizes="xs,s,m,l,xl" data-product-name="gradient graphic t-shirt"  >
 
                                 <a href="product.html">
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ81VG-48DpYAvrm-Yh_uJJfPeqhdZTcOWySQ&s" alt="" ></a>
@@ -177,7 +170,7 @@
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>5.0/5</p>
                                 <p style="font-weight: bold;">$212 <del style="color: gray;">$145</del></p>
                             </div>
-                            <div class="tselling1" data-category="tshirt" data-price="200" data-colors="black" data-sizes="xs,s,m,l,xlm" data-product-name="polo with tipping details">
+                            <div class="tselling1" data-category="tshirt" data-price="200" data-colors="black" data-sizes="xs,s,m,l,xlm" data-product-name="polo with tipping details" >
 
 
                                 <a href="product.html">
@@ -189,7 +182,7 @@
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></i>4.0/5</p>
                                 <p style="font-weight: bold;">$180</p>
                             </div>
-                            <div class="tselling1" data-category="tshirt" data-price="150" data-colors="white , black" data-sizes="xs,s,m,l,xl" data-product-name="black striped t-shirt">
+                            <div class="tselling1" data-category="tshirt" data-price="150" data-colors="white , black" data-sizes="xs,s,m,l,xl" data-product-name="black striped t-shirt"  >
 
                                 <a href="product.html">
                                 <img src="data:image/jpeg;base64,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" alt="">
@@ -201,7 +194,7 @@
                             </div>
                         </div>
                         <div class="tselling">
-                            <div class="tselling1" data-category="shirts" data-price="250" data-colors="red" data-sizes="xs,s,m,l,xl" data-product-name="checked shirt">
+                            <div class="tselling1" data-category="shirts" data-price="250" data-colors="red" data-sizes="xs,s,m,l,xl" data-product-name="checked shirt" >
 
                                 <a href="product.html">
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmSdDCnxNe8eyEfJ9ezwAgZKJbO71SCvooGw&s" alt=""></a>
@@ -233,7 +226,7 @@
                             </div>
                         </div> 
                         <div class="tselling">
-                            <div class="tselling1" data-category="shirts" data-price="250" data-colors="green , black" data-sizes="xs,s,m,l,xl" data-product-name="vertical striped shirt">
+                            <div class="tselling1" data-category="shirts" data-price="250" data-colors="green , black" data-sizes="xs,s,m,l,xl" data-product-name="vertical striped shirt" >
                                 <a href="product.html">
                                 <img src="assets/images/greenshirt.webp" alt=""></a>
                                 <p style ="font-weight: bold;text-align: center; font-size: 20px;">Vertical Striped Shrit</p>
@@ -244,7 +237,7 @@
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>5.0/5</p>
                                 <p style="font-weight: bold;">$212 <del style="color: gray;">$232</del></p>
                             </div>
-                            <div class="tselling1" data-category="tshirt" data-price="200" data-colors="orange" data-sizes="xs,s,m,l,xl" data-product-name="courage graphic t-shirt">
+                            <div class="tselling1" data-category="tshirt" data-price="200" data-colors="orange" data-sizes="xs,s,m,l,xl" data-product-name="courage graphic t-shirt" >
                                 <a href="product.html">
                                 <img src="assets/images/orange.jpeg" alt="" ></a>
                                 <p style ="font-weight: bold;text-align: center; font-size: 20px;">Courage Graphic T-shirt</p></a>
@@ -254,7 +247,7 @@
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></i>4.0/5</p>
                                 <p style="font-weight: bold;">$145</p>
                             </div>
-                            <div class="tselling1" data-category="shorts" data-price="100" data-colors="blue" data-sizes="xs,s,m,l,xl" data-product-name="loose fit bermuda shorts">
+                            <div class="tselling1" data-category="shorts" data-price="100" data-colors="blue" data-sizes="xs,s,m,l,xl" data-product-name="loose fit bermuda shorts" >
                                 <a href="product.html">
                                 <img src="assets/images/shots.jpeg" alt=""></a>
                                 <p style ="font-weight: bold;text-align: center; font-size: 20px;">Loose Fit Bermuda Shorts</p>

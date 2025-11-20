@@ -160,6 +160,50 @@ const App = (function () {
       $input.val(q).trigger('input');
     })();
 
+    /* ===============================
+       Attach Clear button + "All" handlers
+       (safe: create clear button if missing)
+       =============================== */
+    (function attachClearAndAllHandlers() {
+      if (!$input.length) return;
+
+      // create clear button if missing (keeps markup simple)
+      let $clearBtn = $('#search-clear');
+      if (!$clearBtn.length) {
+        $clearBtn = $('<button id="search-clear" type="button" aria-label="Clear search" ' +
+                      'style="display:none; position:absolute; right:6px; top:6px; border:none; background:transparent; font-size:18px; cursor:pointer;">&times;</button>');
+        // insert after input (adjust wrapper if necessary)
+        $input.after($clearBtn);
+      }
+
+      // show/hide clear button while typing
+      $input.on('input', function () {
+        if ($(this).val().trim().length) $clearBtn.show();
+        else $clearBtn.hide();
+      });
+
+      // clicking clear reloads the page without querystring (shows all)
+      $clearBtn.on('click', function () {
+        try { localStorage.removeItem('siteSearchQuery'); } catch (e) {}
+        window.location.href = window.location.pathname;
+      });
+
+      // make the "All" filter reload the page (if you have an "All" link with data-category="all")
+      $(document).on('click', '.filter-category[data-category="all"]', function (e) {
+        e.preventDefault();
+        try { localStorage.removeItem('siteSearchQuery'); } catch (err) {}
+        window.location.href = window.location.pathname;
+      });
+
+      // Escape key while search has text reloads page (optional)
+      $(document).on('keydown', function (e) {
+        if ((e.key === 'Escape' || e.key === 'Esc') && $input.val().trim().length) {
+          try { localStorage.removeItem('siteSearchQuery'); } catch (err) {}
+          window.location.href = window.location.pathname;
+        }
+      });
+    })();
+
     console.debug('Inline search (jQuery) initialized.');
   }
 
@@ -910,6 +954,71 @@ const App = (function () {
     renderCart();
   }
 
+  /* ---------- Apply Filters Button (no popup, ensures "all" shows products) ---------- */
+const applyBtn = qs('#applyFilters');
+if (applyBtn) {
+  applyBtn.addEventListener('click', () => {
+    // 1) category: prefer the .active-category element, otherwise fall back to a data attribute
+    const activeCat = document.querySelector('.filter-category.active-category');
+    selectedCategory = (activeCat?.dataset?.category || 'all').toLowerCase();
+
+    // If user picked "all", clear any search query so search doesn't hide items
+    if (selectedCategory === 'all') {
+      // clear search query param and search bar if present
+      try {
+        const url = new URL(window.location.href);
+        url.searchParams.delete('search');
+        window.history.replaceState({}, '', url.pathname + url.search);
+      } catch (e) { /* ignore if URL unavailable */ }
+
+      if (searchBarEl) {
+        searchBarEl.value = '';
+      }
+    }
+
+    // 2) styles: collect active-style elements (if any)
+    selectedStyles.clear();
+    qsa('.filter-style.active-style').forEach(el => {
+      const st = (el.dataset.style || '').toLowerCase().trim();
+      if (st) selectedStyles.add(st);
+    });
+
+    // 3) colors: collect elements with .selected
+    selectedColors.clear();
+    qsa('.color .selected, .color .color-swatch.selected, .color button.selected').forEach(el => {
+      let col = (el.dataset?.color) || el.getAttribute('alt') || el.getAttribute('title') || '';
+      if (!col && el.closest) col = (el.closest('button')?.dataset?.color || '');
+      col = String(col).toLowerCase().trim();
+      if (col) selectedColors.add(col);
+    });
+
+    // 4) sizes: collect .size-btn.active
+    selectedSizes.clear();
+    qsa('.size-btn.active').forEach(btn => {
+      const s = (btn.dataset.size || btn.textContent || '').toLowerCase().trim();
+      if (s) selectedSizes.add(s);
+    });
+
+    // 5) price slider (if present)
+    if (slider) {
+      maxPrice = parseInt(slider.value || slider.getAttribute('value') || slider.max || 'Infinity', 10) || Infinity;
+      if (value) value.textContent = slider.value;
+    }
+
+    // 6) hide any "no results" message before filtering (prevents a flash)
+    try {
+      if (noResultsEl) noResultsEl.style.display = 'none';
+    } catch (e) { /* ignore */ }
+
+    // 7) apply the filter (this will show all items if selectedCategory === 'all')
+    filterProducts();
+
+    // No popups, no alerts — just silent apply
+  });
+}
+ 
+
+
 
   /* =========================================================
      BOOTSTRAP — Run all page initializers
@@ -931,6 +1040,7 @@ const App = (function () {
   }
 
   return { boot, serverRequest };
+
 })();
 
 /* =========================================================
