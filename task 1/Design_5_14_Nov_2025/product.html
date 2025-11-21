@@ -1,309 +1,189 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product — Responsive</title>
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-   
-    <body>
-        <div class="pages">
-            <p class="top">Sign up and get 20% off to your first order. <a href="">Sign Up Now </a></p>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">                    
-                    <a class="navbar-brand" href="index.html">SHOP.CO</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    <div class="collapse navbar-collapse" id="navbarScroll">
-                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px; gap: 50px;">
-                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="product.html">Men</a></li>
-                                    <li><a class="dropdown-item" href="category.html">Women</a></li>
-                                    <li><a class="dropdown-item" href="category.html">Kids</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link " aria-current="page" href="#">On Sale</a></li>
-                            <li class="nav-item"><a class="nav-link" href="category.html">New Arrials</a></li>
-                            <li class="nav-item"><a class="nav-link " href="category.html" tabindex="-1" aria-disabled="true">Brands</a></li>
-                        </ul>
-                         
-                        <div class="icons">
-                            <a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
-                            <i class="fa-regular fa-user" style="color: #000000;"></i>   
-                        </div>   
-                    </div>
-                </div>
-            </nav>
-            
-            <div>
-                <p>Home  > Shop > Men > T-shirt ></p>
-                <div class="A" >
-                    <div class="tshirt">
-                        <img id="product-main-image" src="" alt="">
-                    </div>
-                    <div class="product" id="product-card">
-                        <h1 id="product-title"></h1>
-                        <div class="rating" aria-label="rating 4.5 out of 5">
-                            <span aria-hidden="true">★ ★ ★ ★ ☆</span>
-                            <span class="muted">4.5/5</span>
-                        </div>
-                            <p class="price">
-                                <span id="price"></span> 
-                                <del>$<span id="old-price"></span></del>
-                            </p>
-                            <p class="lead">This graphic t-shirt is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>
-                            <hr><hr>
-                            <p><strong>Choose Size</strong></p>
-                            <div class="sizes" id="size-list" role="radiogroup" aria-label="Choose size">
-                            <button class="size-btn" data-size="Small" role="radio" aria-checked="false">Small</button>
-                            <button class="size-btn" data-size="Medium" role="radio" aria-checked="false">Medium</button>
-                            <button class="size-btn" data-size="Large" role="radio" aria-checked="false">Large</button>
-                            <button class="size-btn" data-size="X-Large" role="radio" aria-checked="false">X-Large</button>
-                        </div>
-                            <hr>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
-                            <div class="product-actions">
-                                <div class="quantity-selector" aria-label="Quantity selector">
-                                    <button class="qty-btn" id="minus" aria-label="Decrease quantity">−</button>
-                                    <span class="qty-value" id="qty">0</span>
-                                    <button class="qty-btn" id="plus" aria-label="Increase quantity">+</button>
-                                    </div>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
 
-                                    <a id="addToCart" class="add-to-cart" href="cart.html" role="button">Add to cart</a>
-                                        <span class="message" id="msg">Added ✓</span>
-                                    </div>
+   <div class="top">Sign up and get <strong>20% off</strong> on your first order — <a href="#">Sign Up Now</a></div>
 
-                                    </div>
-                </div>
-                <div class="partD">
-                    <h3 style="margin-top: 105px;margin-left: 125px ; margin-bottom: 50px;">All REVIEW</h3>
-                        <div class="row row-cols-1 row-cols-md-2 ms-5 me-5">
-                            <div class="col">
-                                <div class="card h-100">
-                                    <div style="display: flex;padding: 20px;">
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i> 
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Sarah M. <i class="fa-solid fa-circle-check" style="color: #36f401;"></i></h5>
-                                        <p class="card-text">I m blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I ve bought has exceeded my expectations.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card h-100">
-                                    <div style="display: flex;padding: 20px;">
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;">
-                                        </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                        </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                        </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                        </i><i class="fa-solid fa-star" style="color: #FFD43B;"></i> 
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Alex K.<i class="fa-solid fa-circle-check" style="color: #36f401;"></i></h5>
-                                        <p class="card-text">"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card h-100">
-                                    <div style="display: flex; padding: 20px;">
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;">
-                                        </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                        </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                        </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                        </i><i class="fa-solid fa-star" style="color: #FFD43B;"></i> 
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">James L.<i class="fa-solid fa-circle-check" style="color: #36f401;"></i></h5>
-                                        <p class="card-text">As someone whos always on the lookout for unique fashion pieces, I m thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card h-100">
-                                    <div style="display: flex; padding: 20px;">
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;">
-                                        </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                        </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                        </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                        </i><i class="fa-solid fa-star" style="color: #FFD43B;"></i> 
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">James L.<i class="fa-solid fa-circle-check" style="color: #36f401;"></i></h5>
-                                        <p class="card-text">As someone whos always on the lookout for unique fashion pieces, I m thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card h-100">
-                                    <div style="display: flex; padding: 20px;">
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;">
-                                        </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                        </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                        </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                        </i><i class="fa-solid fa-star" style="color: #FFD43B;"></i> 
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">James L.<i class="fa-solid fa-circle-check" style="color: #36f401;"></i></h5>
-                                        <p class="card-text">As someone whos always on the lookout for unique fashion pieces, I m thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card h-100">
-                                    <div style="display: flex; padding: 20px;">
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;">
-                                        </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                        </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                        </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                        </i><i class="fa-solid fa-star" style="color: #FFD43B;"></i> 
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">James L.<i class="fa-solid fa-circle-check" style="color: #36f401;"></i></h5>
-                                        <p class="card-text">As someone whos always on the lookout for unique fashion pieces, I m thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                            <button style="margin-top: 50px;margin-left: 700px ; margin-bottom: 20px; border: none;">Load More Review</button>
-                        </div>
-                        <div>
-                            <div class="selling">
-                                <h1>YOU MIGHT ALSO LIKE</h1>
-                                <div class="tselling">
-                                    <div class="tselling1">
-                                        <img src="assets/images/greenshirt.webp" alt="">
-                                        <p style ="font-weight: bold;text-align: center; font-size: 20px;">Vertical Striped Shrit</p>
-                                        <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>5.0/5</p>
-                                        <p style="font-weight: bold;">$212 <del style="color: gray;">$232</del></p>
-                                    </div>
-                                <div class="tselling2">
-                                    <img src="assets/images/orange.jpeg" alt="">
-                                    <p style ="font-weight: bold;text-align: center; font-size: 20px;">Courage Graphic T-shirt</p>
-                                    <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i></i>4.0/5</p>
-                                    <p style="font-weight: bold;">$145</p>
-                                </div>
-                                <div class="tselling3">
-                                    <img src="assets/images/shots.jpeg" alt="">
-                                    <p style ="font-weight: bold;text-align: center; font-size: 20px;">Loose Fit Bermuda Shorts</p>
-                                    <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i></i></i>3.0/5</p>
-                                    <p style="font-weight: bold;">$80</p>
-                                </div>
-                                <div class="tselling4">
-                                    <img src="assets/images/blackpants.jpeg" alt="">
-                                    <p style ="font-weight: bold;text-align: center; font-size: 20px;">Faded Skinny Jeans</p>
-                                    <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>4.5/5</p>
-                                    <p style="font-weight: bold;">$210</p>
-                                </div>    
-                            </div>    
-                        </div>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#">SHOP.CO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3 gap-3">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Shop</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Men</a></li>
+                <li><a class="dropdown-item" href="#">Women</a></li>
+                <li><a class="dropdown-item" href="#">Kids</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">On Sale</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">New Arrivals</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Brands</a></li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3">
+            <div class="nav-search-wrapper position-relative d-none d-lg-block" style="width:320px;">
+              <input id="search-bar" class="form-control search-input" type="search" placeholder="Search for products..." autocomplete="off">
+              <div id="search-results" class="shadow-sm"></div>
             </div>
-            <!--section 7-->
-            <div class="part3">
-                <h1>STAY UP TO DATE ABOUT<br>OUR LATEST OFFERS</h1>
-                <form>
-                    <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit">Subscribe to Newsletter</button>
-                </form>
+
+            <div class="d-flex gap-3 align-items-center">
+              <a href="cart.html" class="text-dark"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+              <a href="#" class="text-dark"><i class="fa-regular fa-user fa-lg"></i></a>
             </div>
-            <div class="last1">
-            <div class="last">
-                <div class="l5">
-                    <h1>SHOP.CO</h1>
-                <p>We have clothes that suits your style and <br> which you re proud to wear. From <br> women to men.</p>
-                <div>
-                    <i class="fa-brands fa-twitter" style="color: #000000;"></i>
-                    <i class="fa-brands fa-facebook" style="color: #000000;"></i>
-                    <i class="fa-brands fa-instagram" style="color: #000000;"></i>
-                    <i class="fa-brands fa-github" style="color: #000000;"></i>
-                </div>
-                </div>                
-                <div class="l1">
-                    <h4>COMPANY</h4>
-                    <ul>
-                        <li>About</li>
-                        <li>Feartures</li>
-                        <li>Works</li>
-                        <li>Career</li>
-                    </ul>   
-                </div>
-                <div class="l2">
-                    <h4>HELP</h4>
-                    <ul>
-                        <li>Customer Support</li>
-                        <li>Delivery Details</li>
-                        <li>Terms & Conditions</li>
-                        <li>Privacy Policy</li>
-                    </ul>   
-                </div>
-                <div class="l3">
-                    <h4>FAQ</h4>
-                    <ul>
-                        <li>Account</li>
-                        <li>Manage Deliveries</li>
-                        <li>Orders</li>
-                        <li>Payments</li>
-                    </ul>   
-                </div>
-                <div class="l4">
-                    <h4>RESOURCES</h4>
-                    <ul>
-                        <li>Free eBooks</li>
-                        <li>Development Tutorial</li>
-                        <li>How to - Blog</li>
-                        <li>Youtube Playlist</li>
-                    </ul>   
-                </div>
-            </div>
-            <hr>
-            <p>Shop.co © 2000 2023, All Rights Reserved</p>
-            </div>
+          </div>
         </div>
-              
-               <script src="assets/js/main.js"></script>
- <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+      </div>
+    </nav>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+    <div class="breadcrumb"><small class="muted">Home &gt; Shop &gt; Men &gt; T-shirt</small></div>
+
+    <main>
+      <section class="A">
+        <div class="tshirt">
+          <img id="product-main-image" src="https://via.placeholder.com/600x600?text=Product+Image" alt="Product image">
+          <!-- thumbnails (optional) -->
+          <div class="d-flex gap-2">
+            <img class="thumb" src="https://via.placeholder.com/100x100?text=1" width="64" height="64" style="object-fit:cover;border-radius:8px;cursor:pointer">
+            <img class="thumb" src="https://via.placeholder.com/100x100?text=2" width="64" height="64" style="object-fit:cover;border-radius:8px;cursor:pointer">
+            <img class="thumb" src="https://via.placeholder.com/100x100?text=3" width="64" height="64" style="object-fit:cover;border-radius:8px;cursor:pointer">
+          </div>
+        </div>
+
+        <div class="product" id="product-card" aria-live="polite">
+          <h1 id="product-title">Gradient Graphic T-shirt</h1>
+
+          <div class="rating" aria-label="rating 4.5 out of 5">
+            <span aria-hidden="true">★ ★ ★ ★ ☆</span>
+            <span class="muted">4.5/5</span>
+          </div>
+
+          <p class="price"><span id="price">$212</span> <del>$<span id="old-price">245</span></del></p>
+
+          <p class="lead">This graphic t-shirt is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>
+
+          <hr>
+
+          <p><strong>Choose Size</strong></p>
+          <div class="sizes" id="size-list" role="radiogroup" aria-label="Choose size">
+            <button class="size-btn" data-size="Small" role="radio" aria-checked="false">Small</button>
+            <button class="size-btn" data-size="Medium" role="radio" aria-checked="false">Medium</button>
+            <button class="size-btn" data-size="Large" role="radio" aria-checked="false">Large</button>
+            <button class="size-btn" data-size="X-Large" role="radio" aria-checked="false">X-Large</button>
+          </div>
+
+          <hr>
+
+          <div class="product-actions">
+            <div class="quantity-selector" aria-label="Quantity selector">
+              <button class="qty-btn" id="minus" aria-label="Decrease quantity">−</button>
+              <span class="qty-value" id="qty">1</span>
+              <button class="qty-btn" id="plus" aria-label="Increase quantity">+</button>
+            </div>
+
+            <button id="addToCart" class="add-to-cart" type="button">Add to cart</button>
+            <span class="message" id="msg">Added ✓</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews -->
+      <section class="partD">
+        <h3 class="mb-4">All Reviews</h3>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <div class="p-3"> <i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i></div>
+              <div class="card-body">
+                <h5 class="card-title">Sarah M. <i class="fa-solid fa-circle-check text-success"></i></h5>
+                <p class="card-text">I'm blown away by the quality and style of the clothes I received from Shop.co.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="p-3"> <i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i></div>
+              <div class="card-body">
+                <h5 class="card-title">Alex K. <i class="fa-solid fa-circle-check text-success"></i></h5>
+                <p class="card-text">Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+</main>
+      <!-- Newsletter -->
+    <section class="newsletter mx-3">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <div>
+          <h4 class="mb-1">Stay up to date about our latest offers</h4>
+          <p class="mb-0 text-muted">Subscribe to our newsletter for exclusive deals.</p>
+        </div>
+        <form class="d-flex gap-2" onsubmit="return false;">
+          <input type="email" class="form-control" placeholder="Enter your email" required>
+          <button class="btn btn-secondary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+      <!-- Footer -->
+    <footer class="site-footer mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5>SHOP.CO</h5>
+            <p>We have clothes that suit your style and which you're proud to wear.</p>
+            <div class="d-flex gap-2">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <h6>Company</h6>
+            <ul class="list-unstyled small">
+              <li>About</li>
+              <li>Features</li>
+              <li>Works</li>
+              <li>Career</li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <h6>Help</h6>
+            <ul class="list-unstyled small">
+              <li>Customer Support</li>
+              <li>Delivery Details</li>
+              <li>Terms & Conditions</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 text-md-end">
+            <p class="small mb-1">Shop.co © 2000 - 2025, All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts -->
+     <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+  </body>
 </html>

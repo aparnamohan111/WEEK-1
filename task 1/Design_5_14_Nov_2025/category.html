@@ -1,394 +1,258 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Category</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Category</title>
 
-    <body>
-        
-        <div class="pages">
-<!--NAV-BAR-->
-            <p class="top">Sign up and get 20% off to your first order. <a href="">Sign Up Now </a></p>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">                    
-                    <a class="navbar-brand" href="index.html">SHOP.CO</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    <div class="collapse navbar-collapse" id="navbarScroll">
-                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px; gap: 50px;">
-                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="product.html">Men</a></li>
-                                    <li><a class="dropdown-item" href="category.html">Women</a></li>
-                                    <li><a class="dropdown-item" href="category.html">Kids</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link " aria-current="page" href="#">On Sale</a></li>
-                            <li class="nav-item"><a class="nav-link" href="category.html">New Arrials</a></li>
-                            <li class="nav-item"><a class="nav-link " href="category.html" tabindex="-1" aria-disabled="true">Brands</a></li>
-                        </ul>
-<!-- NAV search (replace your current empty space where search should be) -->
-                        <div class="nav-search-wrapper" style="padding-right: 50px; position: relative; max-width: 360px;">
-                            <form class="d-flex" id="search-form" onsubmit="return false;">
-                                <input id="search-bar" class="form-control" type="search"
-                                    placeholder="Search for products.." aria-label="Search"
-                                    autocomplete="off" style="width:100%;">
-                            </form>
-                            
-<!-- dropdown rendered by main.js -->
-                            <div id="search-results" role="listbox" aria-label="Search results"
-                                style="display:none; position:absolute; left:0; right:0; background:#fff; border:1px solid #ddd; max-height:280px; overflow:auto; z-index:1050;"></div>
-                            </div>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+<link rel="stylesheet" href="assets/css/style.css">
 
-                        <div class="icons">
-                             <a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
-                            <i class="fa-regular fa-user" style="color: #000000;"></i>   
-                        </div>   
+</head>
+
+<body>
+
+    <div class="top">Sign up and get <strong>20% off</strong> on your first order — <a href="#">Sign Up Now</a></div>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">SHOP.CO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3 gap-3">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Shop</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="category.html">Men</a></li>
+                <li><a class="dropdown-item" href="category.html">Women</a></li>
+                <li><a class="dropdown-item" href="category.html">Kids</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="category.html">On Sale</a></li>
+            <li class="nav-item"><a class="nav-link" href="category.html">New Arrivals</a></li>
+            <li class="nav-item"><a class="nav-link" href="category.html">Brands</a></li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3">
+            <div class="nav-search-wrapper position-relative d-none d-lg-block" style="width:320px;">
+              <input id="search-bar" class="form-control search-input" type="search" placeholder="Search for products..." autocomplete="off">
+              <div id="search-results" class="shadow-sm"></div>
+            </div>
+
+            <div class="d-flex gap-3 align-items-center">
+              <a href="cart.html" class="text-dark"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+              <a href="#" class="text-dark"><i class="fa-regular fa-user fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    
+        <main class="container container-main">
+        <div class="causal-page">
+
+            <!-- FILTER (offcanvas on small screens) -->
+            <aside class="filter sticky-lg" aria-labelledby="filter-heading">
+                <div class="d-flex d-lg-none justify-content-between align-items-center mb-2">
+                    <h5 id="filter-heading" class="mb-0">Filters</h5>
+                    <button class="btn btn-sm btn-outline-secondary" id="openFilters" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasFilters">Filters</button>
+                </div>
+
+                <div id="filtersInner" class="d-none d-lg-block">
+                    <h6>Category</h6>
+                    <div class="model mb-3">
+                        <button class="btn btn-sm w-100 text-start model-item active-category"
+                            data-category="all">All</button>
+                        <button class="btn btn-sm w-100 text-start model-item" data-category="tshirt">T-shirts</button>
+                        <button class="btn btn-sm w-100 text-start model-item" data-category="shirts">Shirts</button>
+                        <button class="btn btn-sm w-100 text-start model-item" data-category="shorts">Shorts</button>
+                        <button class="btn btn-sm w-100 text-start model-item" data-category="jeans">Jeans</button>
+                    </div>
+
+                    <h6>Price</h6>
+                    <div class="range-box mb-3 d-flex gap-2 align-items-center">
+                        <input type="range" id="range" min="10" max="500" value="500" class="form-range">
+                        <div class="muted" id="rangeVal">$500</div>
+                    </div>
+
+                    <h6>Colors</h6>
+                    <div class="color mb-3" role="toolbar" aria-label="Filter by color">
+                        <button class="color-swatch" data-color="black" aria-pressed="false" title="Black"><img
+                                src="https://dummyimage.com/40x40/000/fff" alt="black"></button>
+                        <button class="color-swatch" data-color="white" aria-pressed="false" title="White"><img
+                                src="https://dummyimage.com/40x40/fff/ccc" alt="white"></button>
+                        <button class="color-swatch" data-color="red" aria-pressed="false" title="Red"><img
+                                src="https://dummyimage.com/40x40/f00/fff" alt="red"></button>
+                        <button class="color-swatch" data-color="blue" aria-pressed="false" title="Blue"><img
+                                src="https://dummyimage.com/40x40/00f/fff" alt="blue"></button>
+                        <button class="color-swatch" data-color="green" aria-pressed="false" title="Green"><img
+                                src="https://dummyimage.com/40x40/0f0/fff" alt="green"></button>
+                    </div>
+
+                    <h6>Size</h6>
+                    <div class="size-buttons mb-3" role="group" aria-label="Filter by size">
+                        <button class="size-btn" data-size="xs">XS</button>
+                        <button class="size-btn" data-size="s">S</button>
+                        <button class="size-btn" data-size="m">M</button>
+                        <button class="size-btn" data-size="l">L</button>
+                        <button class="size-btn" data-size="xl">XL</button>
+                    </div>
+
+                    <div class="apply-row">
+                        <button id="applyFilters" class="btn btn-dark btn-sm">Apply</button>
+                        <button id="resetFilters" class="btn btn-outline-secondary btn-sm">Reset</button>
+                        <button id="viewAll" class="btn btn-outline-dark btn-sm btn-viewall ms-auto">View All</button>
                     </div>
                 </div>
-            </nav>
-<!--MAIN-->           
-            <div class="container">
-                <div class="causal-page">
-<!--FILTER SECTION-->
-                    <div class="filter">
-                        <h3>Filter</h3><hr>
-                        <div class="model">
-                            <a href="#" class="filter-category" data-category="tshirt">T-shirts </a>
-                            <a href="#" class="filter-category" data-category="shorts">Shorts </a>
-                            <a href="#" class="filter-category" data-category="shirts">Shirts </a>
-                            <a href="#" class="filter-category" data-category="hoodie">Hoodie </a>
-                            <a href="#" class="filter-category" data-category="jeans">Jeans </a>
-                        </div>
-                        <hr>
-                        <h3>Price</h3>
-                        <div class="range-box">
-                            <input type="range" id="range" min="10" max="500" >
-                            <span id="value">250</span>
-                        </div>
-                        <hr>
-                        <h3>Colors</h3>
-                        <div class="color" aria-label="Filter by color" role="toolbar">
-                            <button type="button" class="color-swatch" data-color="green" aria-pressed="false" aria-label="Filter green">
-                                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0HCggICA0IBwgHBwoHCAgHBw8ICQgKFREWFhURExMYKCggGBolJxUTITEhJSkrLi4uFx8zODMsNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAQMAwgMBIgACEQEDEQH/xAAWAAEBAQAAAAAAAAAAAAAAAAAAAQb/xAAVEAEBAAAAAAAAAAAAAAAAAAAAAf/EABUBAQEAAAAAAAAAAAAAAAAAAAAG/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AyACdSoAAAAAAAAAAAAAAAAAAAAAAqAAKCAACoAAAAAqKCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKgAACoAAAAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqAAAAAACggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqAAoIAAAAAAAAAAACiAAAAAAAAAAAAAAAAAAICoAAQBQAAAAAAAVAAAAAAAAAAAAAAABFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFRUAABUAAAAAAAAAAAAAAAAAAAAAAVAAABUAAAAAAAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFBAAAAAABQBFAQAAAAAAAAAAAAAAAH/9k=" alt="green swatch">
-                            </button>
+            </aside>
 
-                            <button type="button" class="color-swatch" data-color="red" aria-pressed="false" aria-label="Filter red">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEX/AAAZ4gk3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" alt="red swatch">
-                            </button>
-
-                            <button type="button" class="color-swatch" data-color="yellow" aria-pressed="false" aria-label="Filter yellow">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANsAAADmCAMAAABruQABAAAAA1BMVEX+3AA1rekTAAAASElEQVR4nO3BgQAAAADDoPlT3+AEVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8A8WoAAHxScUAAAAAAElFTkSuQmCC" alt="yellow swatch">
-                            </button>
-
-                            <button type="button" class="color-swatch" data-color="orange" aria-pressed="false" aria-label="Filter orange">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEX+eithTAs8AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" alt="orange swatch">
-                            </button>
-                            
-                            <button type="button" class="color-swatch" data-color="blue" aria-pressed="false" aria-label="Filter blue">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEUTOJ0gO3PxAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" alt="blue swatch">
-                            </button>
-
-                            <button type="button" class="color-swatch" data-color="lightblue" aria-pressed="false" aria-label="Filter light blue">
-                                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIPDxUPDxIVFRUVFRUVFRUVFRUVFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0NDw0NDysZFRkrKys3NysrKys3NzcrKystLS0tKy0rNy0tKysrLSsrKy0tKzcrKy0rKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAABAAIDBAX/xAAaEAEBAQEBAQEAAAAAAAAAAAAAEQESAhMD/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECBgT/xAAYEQEBAQEBAAAAAAAAAAAAAAAAERIBAv/aAAwDAQACEQMRAD8A+Nwfm755OeXYuF24Z+bXzd88nPAz324Z4OeHfg54GduHB+bvw1ngTbz/ADXD0cLkTbj8183fk8ibcPmvm9HKzyJtw+a+b0crkNvPwuHo5XIbef5r5vRyOQ24cDfzejkcht5/mvm9G+RyLt59/MfN6eRyLt5vmPm9W+ByLt5eBvh6d8jkXbzfMfN6N8rka282/mz83q5G+BdvL809PCF27Z5PLeNK81Y5PLUMRKzDy1CJWc8nlqNQZ71jPJ5bhglc+Vy6RQKxyo3EJWOTGoYFc4o6QQKxFHSCBWII3FBa5xR0ggtY5HLpEFc+Rvl0gFrnvkb5dNwbgtc98jfLpuDRedct8jl0A1WIG4ha3hGFWOtEHEZJwIRosnBGsLNIhQKIUCCSQJJAhCgANGioLUAS0KqQQsQ1AVM6UKIIRqqIghTjWaxhod43TWcIy1SyURpUYRDVQRDTWTiDSCEaCQhQQJICkJAEohQGmdALVuJVGs6QNLQRoo0LdY3Va5w1M0CxvCMawTpxrGcaGekinEZJwYcERiIhQVRDqopoJJAkkCSAFBAkkKgqgAKVWdDTOi8Z0NaBrjGs7jbOjXGIm0q0Y1iwiUkHBkkHEQ4WaRGsNYpEjSZNRCWSBQQhSQqCQEJAtVCBVCoUgJRBAUDSNGuDdZ06zqtcSCFaOMZrWaJGiyRCaEI1VQkRqqhA0WcIjSoQhprNSBqFVCFBUI0AqESCoGgUVVjQFFFKC0Fo1AUCNBWmUYhXLNbxjGsGut5pZxrBgkEQkHBlQ5iwoiQVAqigIaqELDUKgaxBCFBAkFRSFUCCGikAUU1M1bqrCmd0UI1UzQKzhwYhpssnNGY3mnGKaJG6c1jNNEjdVYq0SN0UUVCNJmqhGkEBIqApAQipCrVRRoQ1VlCw1VkaqxqjdZVFhoFG6LDuijQLFSyRYkzTQjVOaxTQjdNc6aJHSqudNEjpVWKaJGqWKqEbqrNVEjeaqzVUI3UxVRI2mKqEborFVFjSrKoRqjdZqosNFA1VhCoopAoosOjdG6N0XnCmKkaiz0a5Z6NFy61Vzz0uhI6U1yp6COnRrl0aJl1zVXLo0MutVc6ehI6Z6NcujVSOlVc6qhHSqudVCN9HpzooR06XTn0ugy6VVzqoR0orFFFjdVYqoRuis0dCxobrG6OhY3Rusboosbqc+kNRzzV0Uja6PSQQ56VSEhq6SVIc1dJIh6NSVF2eigi6XSQyul0kLB0qkCopQKjooWDob7SFi6XSSEHQ6SFHQ32kLBvob7KFjPZSFj//2Q==" alt="light blue swatch">
-                            </button>
-
-                            <button type="button" class="color-swatch" data-color="violet" aria-pressed="false" aria-label="Filter violet">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAA1BMVEV/AP/V1f06AAAAR0lEQVR4nO3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO8GxYgAAb0jQ/cAAAAASUVORK5CYII=" alt="violet swatch">
-                            </button>
-
-                            <button type="button" class="color-swatch" data-color="pink" aria-pressed="false" aria-label="Filter pink">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAHlBMVEX/NWf+NGb/PHb/NGn+O3P/OG//N23/OnL+O3X/Nmz4yq7dAAACQklEQVR4nO3X0XKCMBQA0VBbrP//w3VAMHHBghAhuOfBQYVw2QozDV96FLYeYIdsQjYhm5BNyCZkE7IJ2YRsQjYhm5BNyCZkE7IJ2YRsQjYhm5BNyCZkE7IJ2YRsQjYhm5BNKPyuaeurWeJ+Fes2OQabkE3IJmQTCt9r2vpqZhm9CpvYJPKmJsdgE7IJ2YRsQjYhm5BNyCZkE7IJhXN217M83+hfW/1mtECi/xBnGHw72xuaFMcmZBOyCdmEbEI2IZtQ+JnpfG5fW8323CX2pRt/QZMPYBOyCdmEbEI2IZuQTcgmZBOyCYV6L6ZMG+2YcZKimsR7ZpykxCa57afJfhTY5NLIeIJim2SMUmCT7GxCNqFwWaTub++hz/89e95nZfI05kMonTd6s7DJdbXnXzbnrm8b3eal3axvu7Sj3l7rfu9k3/iw5NPu2O6w+/FDf65osXGLm0xVj/yi4m+f7zNh4fj3MHeZ++ZAk1Nk/ogHYBOyCYWTHtmEbEI2IZuQTcgmZBOyCdmEbEI2obADxQ6ekU3IJpIkSZIkSZIkSZIkqRDV1gPsT2UTSZKkElTra1fd+sJaL82/co8jsAnZhG73XIgeAcl36a2Z7x7OhdfDb+O5u/+Lq89uEg/evE67yheb9NsbheI4Y58k089oMq3GugsegE0O6/13eSrzFK+sbZOBYzLMMW8Am5TAJmQTsgnZhGxCNiGbkE3IJmQTsgnZhGxCNiGbkE3IJmQTsgnZhGxCNiGbkE3IJmQTsgnZhP4A0l/4ObCuxwkAAAAASUVORK5CYII=" alt="pink swatch">
-                            </button>
-
-                            <button type="button" class="color-swatch" data-color="white" aria-pressed="false" aria-label="Filter white">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAADGCAMAAAAqo6adAAAACVBMVEX///9/rff///yOlBTYAAABgUlEQVR4nO3PMQEAMAyAsG7+RVdGjhIFMO/Paf3rAqt/XWD1rwus/nWB1b8usPrXBVb/usDqXxdY/esCq39dYPWvC6z+dYHVvy6w+tcFVv+6wOpfF1j96wKrf11g9a8LrP51gdW/LrD61wVW/7rA6l8XWP3rAqt/XWD1rwus/nWB1b8usPrXBVb/usDqXxdY/esCq39dYPWvC6z+dYHVvy6w+tcFVv+6wOpfF1j96wKrf11g9a8LrP51gdW/LrD61wVW/7rA6l8XWP3rAqt/XWD1rwus/nWB1b8usPrXBVb/usDqXxdY/esCq39dYPWvC6z+dYHVvy6w+tcFVv+6wOpfF1j96wKrf11g9a8LrP51gdW/LrD61wVW/7rA6l8XWP3rAqt/XWD1rwus/nWB1b8usPrXBVb/usDqXxdY/esCq39dYPWvC6z+dYHVvy6w+tcFVv+6wOpfF1j96wKrf11g9a8LrP51gdW/LrD61wVW/7rA6l8XWP3rAqt/XWAd/1+uqwJT58ldTAAAAABJRU5ErkJggg==" alt="white swatch">
-                            </button>
-
-                            <button type="button" class="color-swatch" data-color="black" aria-pressed="false" aria-label="Filter black">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEUAAACnej3aAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" alt="black swatch">
-                            </button>
-                        </div>
-                        <hr>
-                        <h3>Size</h3>
-                        <div class="size-buttons" role="group" aria-label="Filter by size">
-                            <button type="button" class="size-btn" data-size="xs" aria-pressed="false">XS</button>
-                            <button type="button" class="size-btn" data-size="s" aria-pressed="false">S</button>
-                            <button type="button" class="size-btn" data-size="m" aria-pressed="false">M</button>
-                            <button type="button" class="size-btn" data-size="l" aria-pressed="false">L</button>
-                            <button type="button" class="size-btn" data-size="xl" aria-pressed="false">XL</button>
-                        </div>
-                        <hr>
-                       <h3>Dress Style</h3>
-                            <div class="style-list">
-                                <a href="#" class="filter-style" data-style="casual">Casual <span>></span></a><br>
-                                <a href="#" class="filter-style" data-style="formal">Formal <span>></span></a><br>
-                                <a href="#" class="filter-style" data-style="party">Party <span>></span></a><br>
-                                <a href="#" class="filter-style" data-style="sports">Sports <span>></span></a>
-                            </div>
-                            <hr>
-                            <div style="display:flex; gap:px;">
-                              
-                                <button id="applyFilters" class="apply btn btn-sm btn-primary">Apply Filters</button>
-
-                                <button id="resetFilters" class="apply btn btn-sm btn-primary">Reset Filters</button>
-                            </div>    
-                        </div>
-                       
-<!--Casual-->
-                    <div class="casual">
-                    <h2 style="margin-left:150px ;">Causal</h2>
-                    
-                    
-                        <div class="tselling">
-                            <div class="tselling1" data-category="tshirt" data-price="150" data-colors="black, white" data-sizes="xs,s,m,l,xl" data-product-name="gradient graphic t-shirt"  >
-
-                                <a href="product.html">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ81VG-48DpYAvrm-Yh_uJJfPeqhdZTcOWySQ&s" alt="" ></a>
-                                <p style ="font-weight: bold;text-align: center; font-size: 20px;">Gradient Graphic T-shirt</p>
-                                <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>5.0/5</p>
-                                <p style="font-weight: bold;">$212 <del style="color: gray;">$145</del></p>
-                            </div>
-                            <div class="tselling1" data-category="tshirt" data-price="200" data-colors="black" data-sizes="xs,s,m,l,xlm" data-product-name="polo with tipping details" >
-
-
-                                <a href="product.html">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAJudalF7fJjMGYMHiGFh6187h9ro-grlJkg&s" alt=""></a>
-                                <p style ="font-weight: bold;text-align: center; font-size: 20px;">Polo with Tipping Details</p>
-                                <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i></i>4.0/5</p>
-                                <p style="font-weight: bold;">$180</p>
-                            </div>
-                            <div class="tselling1" data-category="tshirt" data-price="150" data-colors="white , black" data-sizes="xs,s,m,l,xl" data-product-name="black striped t-shirt"  >
-
-                                <a href="product.html">
-                                <img src="data:image/jpeg;base64,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" alt="">
-                                </a> <p style ="font-weight: bold;text-align: center; font-size: 20px;">Black Striped T-shirt</p>
-                                <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i></i></i>3.0/5</p>
-                                <p style="font-weight: bold;">$120</p>
-                            </div>
-                        </div>
-                        <div class="tselling">
-                            <div class="tselling1" data-category="shirts" data-price="250" data-colors="red" data-sizes="xs,s,m,l,xl" data-product-name="checked shirt" >
-
-                                <a href="product.html">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmSdDCnxNe8eyEfJ9ezwAgZKJbO71SCvooGw&s" alt=""></a>
-                                <p style ="font-weight: bold;text-align: center; font-size: 20px;">Checked shirt</p>
-                                <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>5.0/5</p>
-                                <p style="font-weight: bold;">$212 <del style="color: gray;">$232</del></p>
-                            </div>
-                           <div class="tselling1" data-category="jeans" data-price="150" data-colors="blue" data-sizes="xs,s,m,l,xl" data-product-name="Skinny fit jeans">
-                                <a href="product.html">
-                                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhISEhUTEhcYGBYVFxcWFRUWFhUXGBUYFxYYHSggGBolGxYYITEhJSkrLi4uFyAzODMtNygtLisBCgoKDg0OGxAQGy0lHSExLisrLi0rLSstLS0tLSstLy0tLS0tLSstLS0tLS0tKy0tLS0tLS0tLS0tLSstLS0rLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABgcEBQgDAgH/xABFEAACAQIDBAcDBwgKAwAAAAAAAQIDEQQSIQUHMUEGE1FhgZGhInGxIzJCcqLB8BRSU2KCkrLRFSQzQ3OTs8Lh8WPD0v/EABkBAQADAQEAAAAAAAAAAAAAAAACAwQBBf/EACcRAQACAgEEAQMFAQAAAAAAAAABAgMRMQQSITIiE1FhI0FxgaEU/9oADAMBAAIRAxEAPwC8QAAAAAAAAAAAAAjfT3FRjhurb1rVIRiu1xfWP0gySFFb6dv9bjKdClN2wsXmcXp1s3Ftac4xjHXk5SXJnYp3+Ha27ZiW/wAJT04GbGOhV+zum2Jpq0urqJc5p3/ej96Zu6e8GM4uMqNWlJq2aDhUt3rVMxX6XJE/d6lOqxTH2TSaujAnRu9UR9dOMPSpRhTjWrOMUs1T2L9rlKTbb8zQ4zpbiK0LJqim+EFZ2XFZ3q+D1VuAx9JktPGi/VY6x91mdGtpUaGJipv2p+xZauLk0k5dke8ss5h2RinGV+3j/wAnQnRPbUcVh4TvecUozXNSWl/G1/8Ao9CcH0qRp5d831LzMt0ACtwAAAAAAAAAAAAAAAAAAAAAAAAAAEa3gdIvyHBzqx1qTap0l/5JJ+0+6MVKXfltzOcK6Tu07O70fDtftcbvv7Sy99O0XVxMKEZLLh43av8A3lRKWvO6hlt9ZlZSp2+c1639TVjiIr+UJ3tjSTsvZfF68V6d1j8S8fdqelWs29LqysrdnYfEptprTXu+87ETBt8vT/pn3hr3yr6Wqbvbv1PqpLK2lZJ/jwPOMndO7bQ8yNlh5KMnfV9iulfmn3epN+iXSl4arTm21SWlSnG1nB31tzyvXz77wJNS1+a/T8eXibHBOKavK/c9ONuy/eWRqY1MIfl0/QrRnFTi7xkk0+1NXR6EL3X7SVTDyopt9Q1lve+SV7ceOql5omhitGp0tidwAAi6AAAAAAAAAAAAAAAAAAAAAAB8zlZN9iuBzb0rruti8TUlq5Yipb6sZuEPsxiaSvh+fb/M2kYXSk9W9fPVnzVonqdvjTLNpaGdI8J3Rtq9DR2NTiEVXjSyttvqs9fBHrShqeS1a9xssJQT7/ccpGy06fdCkn5GdRoryPqNDLoehfEKtp1usxbhjOrvpUoySV+aaknb9mXmW6Uh0Gq5cdQle3tqL788Ki/HvLvMXUxq6/F6gAM6wAAAAAAAAAAAAAAAAAAAAADxxv8AZz+pL4M9j4qwzRa7U15oDmuk/Zjy0XwPWS0PCgrRiuxL00Pub07/ALz1tsb5rR0I5tGk4q5JK0tNTSbSWniQvwlTlrKMKloS6uWSbahJxl1cnFvNllwlbnYlOBg1HW3DkrGftraE3sjZNGVvnYma7bUqjp0/DLUfkjBwstPIhg48pZeWUu8+lTPhPU9m9O+34+Bcplsuisv67hf8eHx9C+ihehdPNj8Ml+lT/ci5fcX0Yuq9oacXAADMtAAAAAAAAAAAAAAAAAAAAAAAAc7bewrpYrEU2vm4irb6rqScfstGuqsl283CZNoVHw62FOp9nq3/AKfqRGsenSd1iWS0al81Vp6mlxj0Nu5aGmxzspPsFna8pV0swjhs7Ysnb2sPiH/mTp1F/Ea3By4E03m7P6vZWyLrWlGnTb5XlhbvzcCE4WPArwT8U8vLOXvPe7t2GMnp+OR7Slp4l8Kko3Y4bNtCD/R0qk/RQ8NZougq3c1hr1MTWtwjCmn3tylP4QLSPP6id3accaqAApTAAAAAAAAAAAAAAAAAAAAAAAAVhvlwlpYasuanTfv0lD0zlaV0XTvWwfWYCUkrujUp1F+91cn7lGpJ+BS9dWN/Tzun8M+WPk8L/A021PmT9z+83Wj4Go2tG0J+5/AstwjTldm+PCX2TSf6GtQfnGVL/wBhU+DengXdvWoX2RXXDKqMv3K9Jv0TKRw3Ap6f1TysqEuXeZLjoY9O1zIxcrRb7L+BphUtvdLg8mAU7f21Wc+/S1NfwE0NV0VwnVYPD07WcaELr9ZxTl6tm1PLvO7TLXEagABF0AAAAAAAAAAAAAAAAAAAAAAABg7cwXX4etR/S0Zw9zlFpPzOdKkrxWjTtqjplnPnSPCdVi8TStbLXnZfqzeeH2ZI1dLPMKssfu0VMwNpUnKLiuMlZctXovU2SVuRj19JRfZKL4frI024VU5dBbxKObZmNXZhqkvGEc6/hOf8PwR0nt+i54XEQVrzoVYq/C7hJHOOz4XhF2XBcjP03ErMrKpx1Rk/k3Wzp0f01SFPTl1klH0vc/KVP3eiNr0NouptLDLkqjm/2ISkn5xRptOqzKqI3K9kj9APLawAAAAAAAAAAAAAAAAAAAAAAAAAACi94VOUdqYltaT6qUeeioU4+DzRZehSW9Opm2hPVPJRpQ0fDSU9eWb5TnyaNHTe6vL6olWa7rmHiYZpRiuLlFLvbaSt4nvUbeuVv3/zv9xk9DqEau08HCfD8ojLKtdaalUj4ZoI1XnwqpHl0fjaWenOH50JR800cx7Pq2jFSVnaz96VmdRM5o6SYTqsbiqad1HFVbdylNzS8FK3gZumnzMLMseGXHEpxVu83+69p7ShflRq2+taOnvs5PwIjh6vJ8r2/wCNEkSbd+nDaNCo+EnKFr3spwklw0+dbXU05PSVVPFl7AA81qAAAAAAAAAAAAAAAAAAAAAAAAAAAKM3puP9IVc2VaU+Dt/dR1kr8fusXmUJvbqOO0auiV6dJ+/2ErvysX9P7IZI3CHz6rtb/HcjcbuIR/pTCuP6Z3/y6hoamIN7u3d9p4T/AB3/AKVQvyT4lCseXSZz3vKyrauLTsvbpfS7cPRb05cb+Z0Kc/73HbalXvp0n9i1/Qo6f2TvHhE1OCejenZb7kSTorKKxOGaWv5TQ4t31qxXN/i5F61bUkXRCGbF4Vcf6zR0+rUi38DVvxKqY4dHAA85oAAAAAAAAAAAAAAAAAAAAAAAAAAAKJ32UXHaCdtKmFpu/ep1Iv0UfMvYp7f3QefCT5OFaL96dNr4stwz80bcKlkS/dRQz7Tw36kqkvKjUX+4h7LF3IUM2PlLlDC1Hfvc6S+Fy+/iso15XuUDvli1tSXfh6L8Lzj8Ysv4o3flQtj6U/z8JFfuVaj/AN5Rh9krcK5rMm26jDdZj6PZBzm/2YSt9pohE2WluQoJ4irKz9mg1zss042178r8maLzqsoR+y5wAYloAAAAAAAAAAAAAAAAAAAAAAAAAABV+/ii3hsPKytGvJN31TlTdlbmnlfku8tAgm+bAyqbNlKKv1FWFWVld5FmhJr3Kd33Jk8c/KHJ4c+stXcHTXXYp2+bSpL96dT/AOCqZvufp/MtPcDi71sVBJq9KnJ3XHJOSjaS0+nLR669zNGX1RrHldZT2/uh8pg6lvo1oO3vpSXwfmXCVTv8qfJYSOl+unK/dGnZ+s15FGL3hK3CnJcS6txlD5DETs9akIX+pFyt4dYvNFKX1L73KyTwErQcbYiXta2qfJ0/aT4O3zNOcGX5Z+KFeU/ABkWAAAAAAAAAAAAAAAAAAAAAAAAAAAEa3j7KqYrZ2Io0r53GM4pfSdKcamT9pQy+JJT8Z2J1OxyT+SN8bJdsnG3le7Lk3G4FKGKrXg1KpCnFJLNHLHNN5rXyyzw9nhem3zIxHoHhnVlLrcQoZ52pxcYKOrtHMo3tyJZ0AwHUYv5BKFB0FRlSTatKDlOFS3027uLk3fXnfTlupree2F3/ADWrWbSs4p/f/hov8knZZl1y1XL5Nr1+JcBA95ux6eL6qE5TpyhGTU4Oz9ppZXF6Si8vBo7F4pPdKutJvPbDnyEJXdvNNo6Z3c7KqYbZ9CnVcuscXOak/muo82W3BWTS05pvi2VBhuhuSaf5Qnrm1oU03l1SvqlfhexfmzMVGrRp1IpqNSnCaT4pSimr9+pK2auSNVLYb4/ZkgAgiAAAAAAAAAAAAAAAAAAAAAAAAAAAGABWuMSjVrW4dbU07PaZldB43xDt9GLk/wCFfxehh4xuVSpLtqz9ZMy+gdZRxM4PjOk7PvjJXXjf7Jhxz+o9XLE/R/pYJCel1bNiMq+hCKfveaX3ompW3SXGpYitPilK2nG8IqNl4xZozeumPpY+e/tDFhh+b5ST8uT7EWXszDqnRpwjwhThFe6MUio9i46pVqNZMsdczve2mi08UXFQ+bG/5q+BHBGtrOrt3amH2ADQxAAAAAAAAAAAAAAAAAAAAAAAAAAAGNtPGxoUp1p3y04OTsm20leyS1bfBLm2ZJi7UwSr0p0nKUc60lHSUJLWMo96aTV+wCkcR0vqt3jgMS73laWWD11do3b5md0L6QS/pGjCvRqYadSUlGNRaSvFpxjJcWm4trvN1i+iO3FKLp4zAVVGakpVKU6U3a+jUFJJat2T4kj6PdF60akcRjqlKtWp36tU4yUKblHLKV5tynO2ieiSb01KK4tTw2XzxNdRP+JNjcQqVOdR8KcJSfujFt/AoDGdKOszdZQxSzydXMqMrOGrnJX5a3vax0DiaWeEovhKLXmrFZYno1t+VRPrNlzhBSUVPr7NSVruOVtOy4Xa95O9d6VYbxXe5aDo50kwbqww8Z9XKUknGrGVObbtl1lpKTva3kXiiu6G7utXqUau0cTSqdRUjUjTw9GNNZoWspVZXnKOi9nT+ViHaU7XMuXv1+AAE1IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/9k=" alt="">
-                                </a><p style ="font-weight: bold;text-align: center; font-size: 20px;">Skinny fit jeans</p>
-                                <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i></i>4.0/5</p>
-                                <p style="font-weight: bold;">$145</p>
-                            </div>
-                            <div class="tselling1" data-category="tshirt" data-price="100" data-colors="blue , green" data-sizes="xs,s,m,l,xl" data-product-name="Sleeve stripped t-shirt">
-                                <a href="product.html">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB5_3mVWWRIxk70miODivIjaCmEYj_QSIH9A&s" alt=""></a>
-                                <p style ="font-weight: bold;text-align: center; font-size: 20px;">Sleeve Striped t-shirt</p>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i></i></i>3.0/5</p>
-                                <p style="font-weight: bold;">$80</p>
-                            </div>
-                        </div> 
-                        <div class="tselling">
-                            <div class="tselling1" data-category="shirts" data-price="250" data-colors="green , black" data-sizes="xs,s,m,l,xl" data-product-name="vertical striped shirt" >
-                                <a href="product.html">
-                                <img src="assets/images/greenshirt.webp" alt=""></a>
-                                <p style ="font-weight: bold;text-align: center; font-size: 20px;">Vertical Striped Shrit</p>
-                                <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>5.0/5</p>
-                                <p style="font-weight: bold;">$212 <del style="color: gray;">$232</del></p>
-                            </div>
-                            <div class="tselling1" data-category="tshirt" data-price="200" data-colors="orange" data-sizes="xs,s,m,l,xl" data-product-name="courage graphic t-shirt" >
-                                <a href="product.html">
-                                <img src="assets/images/orange.jpeg" alt="" ></a>
-                                <p style ="font-weight: bold;text-align: center; font-size: 20px;">Courage Graphic T-shirt</p></a>
-                                <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i></i>4.0/5</p>
-                                <p style="font-weight: bold;">$145</p>
-                            </div>
-                            <div class="tselling1" data-category="shorts" data-price="100" data-colors="blue" data-sizes="xs,s,m,l,xl" data-product-name="loose fit bermuda shorts" >
-                                <a href="product.html">
-                                <img src="assets/images/shots.jpeg" alt=""></a>
-                                <p style ="font-weight: bold;text-align: center; font-size: 20px;">Loose Fit Bermuda Shorts</p>
-                                <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i></i></i>3.0/5</p>
-                                <p style="font-weight: bold;">$80</p>
-                            </div>
-                        </div>
-                    </div>    
-                </div> 
-            </div>
-<!--section 7-->
-            <div class="part3">
-                <h1>STAY UP TO DATE ABOUT<br>OUR LATEST OFFERS</h1>
-                <form>
-                    <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit">Subscribe to Newsletter</button>
-                </form>
-            </div>
-            <div class="last1">
-            <div class="last">
-                <div class="l5">
-                    <h1>SHOP.CO</h1>
-                <p>We have clothes that suits your style and <br> which you re proud to wear. From <br> women to men.</p>
-                <div>
-                    <i class="fa-brands fa-twitter" style="color: #000000;"></i>
-                    <i class="fa-brands fa-facebook" style="color: #000000;"></i>
-                    <i class="fa-brands fa-instagram" style="color: #000000;"></i>
-                    <i class="fa-brands fa-github" style="color: #000000;"></i>
+            <!-- OFFCANVAS for mobile filters -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasFilters"
+                aria-labelledby="offcanvasFiltersLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasFiltersLabel">Filters</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
-                </div>                
-                <div class="l1">
-                    <h4>COMPANY</h4>
-                    <ul>
-                        <li>About</li>
-                        <li>Feartures</li>
-                        <li>Works</li>
-                        <li>Career</li>
-                    </ul>   
-                </div>
-                <div class="l2">
-                    <h4>HELP</h4>
-                    <ul>
-                        <li>Customer Support</li>
-                        <li>Delivery Details</li>
-                        <li>Terms & Conditions</li>
-                        <li>Privacy Policy</li>
-                    </ul>   
-                </div>
-                <div class="l3">
-                    <h4>FAQ</h4>
-                    <ul>
-                        <li>Account</li>
-                        <li>Manage Deliveries</li>
-                        <li>Orders</li>
-                        <li>Payments</li>
-                    </ul>   
-                </div>
-                <div class="l4">
-                    <h4>RESOURCES</h4>
-                    <ul>
-                        <li>Free eBooks</li>
-                        <li>Development Tutorial</li>
-                        <li>How to - Blog</li>
-                        <li>Youtube Playlist</li>
-                    </ul>   
+                <div class="offcanvas-body">
+                    <!-- copy of the filters for mobile (kept simple) -->
+                    <div>
+                        <h6>Category</h6>
+                        <div class="model mb-3">
+                            <button class="btn btn-sm w-100 text-start model-item" data-category="all">All</button>
+                            <button class="btn btn-sm w-100 text-start model-item"
+                                data-category="tshirt">T-shirts</button>
+                            <button class="btn btn-sm w-100 text-start model-item"
+                                data-category="shirts">Shirts</button>
+                            <button class="btn btn-sm w-100 text-start model-item"
+                                data-category="shorts">Shorts</button>
+                            <button class="btn btn-sm w-100 text-start model-item" data-category="jeans">Jeans</button>
+                        </div>
+
+                        <h6>Price</h6>
+                        <div class="range-box mb-3 d-flex gap-2 align-items-center">
+                            <input type="range" id="rangeMobile" min="10" max="500" value="500" class="form-range">
+                            <div class="muted" id="rangeValMobile">$500</div>
+                        </div>
+
+                        <h6>Colors</h6>
+                        <div class="color mb-3" role="toolbar" aria-label="Filter by color">
+                            <button class="color-swatch" data-color="black" aria-pressed="false" title="Black"><img
+                                    src="https://dummyimage.com/40x40/000/fff" alt="black"></button>
+                            <button class="color-swatch" data-color="white" aria-pressed="false" title="White"><img
+                                    src="https://dummyimage.com/40x40/fff/ccc" alt="white"></button>
+                            <button class="color-swatch" data-color="red" aria-pressed="false" title="Red"><img
+                                    src="https://dummyimage.com/40x40/f00/fff" alt="red"></button>
+                            <button class="color-swatch" data-color="blue" aria-pressed="false" title="Blue"><img
+                                    src="https://dummyimage.com/40x40/00f/fff" alt="blue"></button>
+                            <button class="color-swatch" data-color="green" aria-pressed="false" title="Green"><img
+                                    src="https://dummyimage.com/40x40/0f0/fff" alt="green"></button>
+                        </div>
+
+                        <h6>Size</h6>
+                        <div class="size-buttons mb-3" role="group" aria-label="Filter by size">
+                            <button class="size-btn" data-size="xs">XS</button>
+                            <button class="size-btn" data-size="s">S</button>
+                            <button class="size-btn" data-size="m">M</button>
+                            <button class="size-btn" data-size="l">L</button>
+                            <button class="size-btn" data-size="xl">XL</button>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button id="applyFiltersMobile" class="btn btn-dark btn-sm"
+                                data-bs-dismiss="offcanvas">Apply</button>
+                            <button id="resetFiltersMobile" class="btn btn-outline-secondary btn-sm">Reset</button>
+                            <button id="viewAllMobile" class="btn btn-outline-dark btn-sm ms-auto">View All</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <hr>
-            <p>Shop.co © 2000 2023, All Rights Reserved</p>
-            </div>
+
+            <!-- PRODUCTS -->
+            <section class="products-col">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="mb-0">Casual</h3>
+                    <div class="d-flex gap-2 align-items-center">
+                        <label class="muted mb-0">Sort:</label>
+                        <select id="sortBy" class="form-select form-select-sm ms-1" style="width:auto">
+                            <option value="popular">Popular</option>
+                            <option value="price_asc">Price: Low to High</option>
+                            <option value="price_desc">Price: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row g-3" id="productGrid" aria-live="polite" aria-atomic="true">
+                    <!-- product cards are generated by JS from data below -->
+                </div>
+
+                <div id="noResults" class="no-results d-none">No products match your filters.</div>
+            </section>
+
+    </div>
+    </main>
+      <!-- Newsletter -->
+    <section class="newsletter mx-3">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <div>
+          <h4 class="mb-1">Stay up to date about our latest offers</h4>
+          <p class="mb-0 text-muted">Subscribe to our newsletter for exclusive deals.</p>
         </div>
+        <form class="d-flex gap-2" onsubmit="return false;">
+          <input type="email" class="form-control" placeholder="Enter your email" required>
+          <button class="btn btn-secondary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+        <!-- Footer -->
+    <footer class="site-footer mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5>SHOP.CO</h5>
+            <p>We have clothes that suit your style and which you're proud to wear.</p>
+            <div class="d-flex gap-2">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <h6>Company</h6>
+            <ul class="list-unstyled small">
+              <li>About</li>
+              <li>Features</li>
+              <li>Works</li>
+              <li>Career</li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <h6>Help</h6>
+            <ul class="list-unstyled small">
+              <li>Customer Support</li>
+              <li>Delivery Details</li>
+              <li>Terms & Conditions</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 text-md-end">
+            <p class="small mb-1">Shop.co © 2000 - 2025, All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-        <script>
-            
-document.addEventListener('DOMContentLoaded', function () {
-  const params = new URLSearchParams(window.location.search);
-  const name = params.get('name');        // gradient graphic t-shirt
-  const category = params.get('category');
-  const price = params.get('price');
-  const colors = params.get('colors');
-  const sizes = params.get('sizes');
-
-  // Example: inject into DOM (make elements with these IDs)
-  if (name) document.getElementById('product-name').textContent = decodeURIComponent(name);
-  if (category) document.getElementById('product-category').textContent = decodeURIComponent(category);
-  if (price) document.getElementById('product-price').textContent = '$' + price;
-  if (colors) document.getElementById('product-colors').textContent = colors;
-  if (sizes) document.getElementById('product-sizes').textContent = sizes;
-
-  // If you need full product object, you can recompose from params
-});
-
-
-(function () {
-  // helper to set input and trigger your main.js handler
-  function applySearchTerm(q) {
-    if (!q) return;
-    const $input = $('#search-bar');
-    if (!$input || $input.length === 0) return;
-
-    // set value
-    $input.val(q);
-
-    // trigger input after a short delay so main.js had time to bind handlers
-    // (main.js uses $(document).ready — short timeout avoids race)
-    setTimeout(function () {
-      $input.trigger('input'); // your existing handler listens for 'input' / keyup
-      $input.focus();
-    }, 60);
-  }
-
-  // 1) try URL param ?search=...
-  const params = new URLSearchParams(window.location.search);
-  const q = params.get('search');
-  if (q) { applySearchTerm(q); return; }
-
-  // 2) fallback: try localStorage (if you used Option B earlier)
-  const ls = localStorage.getItem('siteSearchQuery');
-  if (ls) {
-    localStorage.removeItem('siteSearchQuery');
-    applySearchTerm(ls);
-  }
-})();
-</script>
-
-        
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="assets/js/main.js"></script>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

@@ -1,377 +1,272 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Home</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
 
-    <body>
-        <div class="pages">
+    <div class="top">Sign up and get <strong>20% off</strong> on your first order — <a href="#">Sign Up Now</a></div>
 
-<!-- top -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">SHOP.CO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <p class="top">Sign up and get 20% off to your first order. <a href="">Sign Up Now </a></p>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3 gap-3">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Shop</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="category.html">Men</a></li>
+                <li><a class="dropdown-item" href="category.html">Women</a></li>
+                <li><a class="dropdown-item" href="category.html">Kids</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="category.html">On Sale</a></li>
+            <li class="nav-item"><a class="nav-link" href="category.html">New Arrivals</a></li>
+            <li class="nav-item"><a class="nav-link" href="category.html">Brands</a></li>
+          </ul>
 
-<!-- nav bar -->
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">                    
-                    
-                    <a class="navbar-brand" href="index.html">SHOP.CO</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    <div class="collapse navbar-collapse" id="navbarScroll">
-                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px; gap: 50px;">
-                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="product.html">Men</a></li>
-                                    <li><a class="dropdown-item" href="category.html">Women</a></li>
-                                    <li><a class="dropdown-item" href="category.html">Kids</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link " aria-current="page" href="category.html">On Sale</a></li>
-                            <li class="nav-item"><a class="nav-link" href="category.html">New Arrials</a></li>
-                            <li class="nav-item"><a class="nav-link " href="category.html" tabindex="-1" aria-disabled="true">Brands</a></li>
-                        </ul>
-<!-- SEARCH: note id on input and wrapper for dropdown -->
-                        <div class="nav-search-wrapper" style="padding-right: 50px; position: relative;">
-                            <form class="d-flex" id="search-form" onsubmit="return false;">
-                                <input id="search-bar" class="form-control" type="search" placeholder="Search for products.." aria-label="Search" autocomplete="off">
-                            </form>
-
-<!-- search results dropdown -->
-                            <div id="search-results" 
-                                style="display:none; position:absolute; background:#fff; width:300px; border:1px solid #ccc; z-index:1000;">
-                            </div>
-                        </div>
-
-                        <div class="icons">
-                            <a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
-                             
-                            <i class="fa-regular fa-user" style="color: #000000;"></i>
-                            
-                        </div>   
-                    </div>
-                </div>
-            </nav>
-
-<!---hero section-->
-            
-            <div class="partA">
-                <div class="part1" >
-                    <h1 class="heading">FIND CLOTHES <bR> THAT MATCHES<br>YOUR STYLE</h1>
-                    <p>Browse through our diverse range of meticulously crafted garments, designed <br>to bring out your individuality and cater to your sense of style.</p>                    
-                    <a class="btn"  href="category.html">Shop Now</a>
-                    <h1>200+
-                    <span style="border-left: 2px solid gray; margin: 0 10px; height: 20px; display: inline-block;"></span>
-                    2,000+ 
-                    <span style="border-left: 2px solid gray; margin: 0 10px; height: 20px; display: inline-block;"></span>
-                    30,000+
-                    </h1> 
-                    <p>International Brands 
-                    <span style="border-left: 2px solid gray; margin: 0 10px; height: 20px; display: inline-block;"></span>
-                    High-Quality Products 
-                    <span style="border-left: 2px solid rgb(180, 180, 180); margin: 0 10px; height: 20px; display: inline-block;"></span>
-                    Happy Customers</p>
-                </div>
-                <div class="part2">
-                    <img src="assets/images/image.png" alt="">
-                </div>
+          <div class="d-flex align-items-center gap-3">
+            <div class="nav-search-wrapper position-relative d-none d-lg-block" style="width:320px;">
+              <input id="search-bar" class="form-control search-input" type="search" placeholder="Search for products..." autocomplete="off">
+              <div id="search-results" class="shadow-sm"></div>
             </div>
 
-<!---new arrivals--->
-
-            <div class="partB">
-                <H1 style="margin-left: 150px ;">VERSACE</H1>
-                <H1>ZARA</H1>
-                <H1>GUCCI</H1>
-                <H1>PRADA</H1>
-                <H1>Calvin Klevin</H1>
+            <div class="d-flex gap-3 align-items-center">
+              <a href="cart.html" class="text-dark"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+              <a href="#" class="text-dark"><i class="fa-regular fa-user fa-lg"></i></a>
             </div>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-<!---top selling--->
-
-            <div class="partC">
-                <h1>NEW ARRIVALS</h1>
-                <div class="dress">
-                    <div class="dress1">
-                        <img src="assets/images/black.jpeg" alt="tshirt">
-                        <p style ="font-weight: bold;text-align: center; font-size: 20px;">T-shirt with Tape Details</p>
-                        <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>4.5/5</p>
-                        <p style="font-weight: bold;">$120</p>
-                    </div>
-                    <div class="dress2">
-                        <img src="assets/images/jeans.jpeg" alt="jeans">
-                        <p style ="font-weight: bold;text-align: center; font-size: 20px;">Skinny Fit Jeans</p>
-                        <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>3.5/5</p>
-                        <p style="font-weight: bold;">$240 <del style="color: gray;">$260</del> </p>    
-                    </div>
-                    <div class="dress3">
-                        <img src="assets/images/blackred.jpeg" alt="shirt">
-                        <p style ="font-weight: bold;text-align: center; font-size: 20px;">Checkered Shirt</p>
-                        <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>4.5/5</p>
-                        <p style="font-weight: bold;">$180</p>
-                    </div>
-                    <div class="dress4">
-                        <img src="assets/images/orangetshirt.jpeg" alt="stirt">
-                        <p style ="font-weight: bold;text-align: center; font-size: 20px;">Sleeve Striped T-shirt</p>
-                        <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>4.5/5</p>
-                        <p style="font-weight: bold;">$130 <del style="color: gray;">$160</del> </p>
-                    </div>
-                </div>               
-                <a class="btn"  href="category.html">View All</a>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-6">
+            <h1>Find clothes that <br class="d-none d-md-block">match your style</h1>
+            <p class="lead">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+            <div class="d-flex gap-3 flex-wrap mb-3">
+              <a class="btn btn-dark btn-lg" href="category.html">Shop Now</a>
+              <div class="d-flex align-items-center gap-3">
+                <div><strong>200+</strong></div>
+                <div style="width:1px;height:28px;background:#ddd"></div>
+                <div><strong>2,000+</strong></div>
+                <div style="width:1px;height:28px;background:#ddd"></div>
+                <div><strong>30,000+</strong></div>
+              </div>
             </div>
-            <hr>
-    
-<!---dress style--->
+            <p class="text-muted">International Brands · High-Quality Products · Happy Customers</p>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img src="assets/images/image.png" alt="hero" class="img-fluid hero-fig">
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="selling">
-                <h1>TOP SELLING</h1>
-                <div class="tselling">
-                    <div class="tselling1">
-                        <img src="assets/images/greenshirt.webp" alt="">
-                        <p style ="font-weight: bold;text-align: center; font-size: 20px;">Vertical Striped Shrit</p>
-                        <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>5.0/5</p>
-                        <p style="font-weight: bold;">$212 <del style="color: gray;">$232</del></p>
-                    </div>
-                    <div class="tselling2">
-                        <img src="assets/images/orange.jpeg" alt="">
-                    <p style ="font-weight: bold;text-align: center; font-size: 20px;">Courage Graphic T-shirt</p>
-                    <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i></i>4.0/5</p>
-                        <p style="font-weight: bold;">$145</p>
-                    </div>
-                    <div class="tselling3">
-                        <img src="assets/images/shots.jpeg" alt="">
-                        <p style ="font-weight: bold;text-align: center; font-size: 20px;">Loose Fit Bermuda Shorts</p>
-                        <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i></i></i>3.0/5</p>
-                        <p style="font-weight: bold;">$80</p>
-                    </div>
-                    <div class="tselling4">
-                        <img src="assets/images/blackpants.jpeg" alt="">
-                        <p style ="font-weight: bold;text-align: center; font-size: 20px;">Faded Skinny Jeans</p>
-                        <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>4.5/5</p>
-                        <p style="font-weight: bold;">$210</p>
-                    </div>    
-                </div>    
-            </div>
+    <!-- New arrivals -->
+    <section class="py-4">
+      <div class="container">
+        <div class="d-flex flex-wrap gap-4 justify-content-center text-center">
+          <div class="badge bg-dark text-white px-3 py-2 rounded">VERSACE</div>
+          <div class="badge bg-dark text-white px-3 py-2 rounded">ZARA</div>
+          <div class="badge bg-dark text-white px-3 py-2 rounded">GUCCI</div>
+          <div class="badge bg-dark text-white px-3 py-2 rounded">PRADA</div>
+          <div class="badge bg-dark text-white px-3 py-2 rounded">CALVIN KLEIN</div>
+        </div>
+      </div>
+    </section>
 
-<!---happy customers--->
-
-            <div class="container my-5">
-                <div class="container-box">
-                    <h2 class="section-title">BROWSE BY DRESS STYLE</h2>
-                    <div class="row g-4 ">
-                        <div class="col-md-6">
-                            <div class="category-card" >
-                                <img src="https://images.jdmagicbox.com/quickquotes/images_main/casual-grey-t-shirt-s-384311112-m2p7q.jpg" alt="casual">
-                                <div class="category-name">Casual</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="category-card">
-                                <img src="https://www.wallpaperflare.com/static/183/937/164/gerard-butler-man-brunette-coat-wallpaper.jpg" alt="formal">
-                                <div class="category-name">Formal</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="category-card">
-                                <img src="https://images.pexels.com/photos/6006352/pexels-photo-6006352.jpeg" alt="party">          
-                                <div class="category-name">Party</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="category-card">
-                                <img src="https://images.pexels.com/photos/6975777/pexels-photo-6975777.jpeg" alt="gym">
-                                <div class="category-name">Gym</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-<!-- happy customers-->
-
-            <div class="partD">
-                <h1 >OUR HAPPY CUSTOMERS</h1>
-                <div class="row row-cols-1 row-cols-md-3 ms-5 me-5">
-                    <div class="col">
-                        <div class="card h-100">
-                            <div style="display: flex;padding: 20px;">
-                                <i class="fa-solid fa-star" style="color: #FFD43B;">
-                                </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                </i><i class="fa-solid fa-star" style="color: #FFD43B;"></i> 
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Sarah M. <i class="fa-solid fa-circle-check" style="color: #36f401;"></i></h5>
-                                <p class="card-text">I m blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I ve bought has exceeded my expectations.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                           <div style="display: flex;padding: 20px;">
-                                <i class="fa-solid fa-star" style="color: #FFD43B;">
-                                </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                </i><i class="fa-solid fa-star" style="color: #FFD43B;"></i> 
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Alex K.<i class="fa-solid fa-circle-check" style="color: #36f401;"></i></h5>
-                                <p class="card-text">"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <div style="display: flex; padding: 20px;">
-                                <i class="fa-solid fa-star" style="color: #FFD43B;">
-                                </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                </i><i class="fa-solid fa-star" style="color: #FFD43B;">
-                                </i><i class="fa-solid fa-star" style="color: #FFD43B;"></i> 
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">James L.<i class="fa-solid fa-circle-check" style="color: #36f401;"></i></h5>
-                                <p class="card-text">As someone whos always on the lookout for unique fashion pieces, I m thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-<!---- newsletter---->
-
-            <div class="part3">
-                <h1>STAY UP TO DATE ABOUT<br>OUR LATEST OFFERS</h1>
-                <form>
-                    <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit" class="submit">Subscribe to Newsletter</button>
-                </form>
-            </div>
-            <div class="last1">
-            <div class="last">
-                <div class="l5">
-                    <h1>SHOP.CO</h1>
-                <p>We have clothes that suits your style and <br> which you re proud to wear. From <br> women to men.</p>
-                <div>
-                    <i class="fa-brands fa-twitter" style="color: #000000;"></i>
-                    <i class="fa-brands fa-facebook" style="color: #000000;"></i>
-                    <i class="fa-brands fa-instagram" style="color: #000000;"></i>
-                    <i class="fa-brands fa-github" style="color: #000000;"></i>
-                </div>
-                </div>                
-                <div class="l1">
-                    <h4>COMPANY</h4>
-                    <ul>
-                        <li>About</li>
-                        <li>Feartures</li>
-                        <li>Works</li>
-                        <li>Career</li>
-                    </ul>   
-                </div>
-                <div class="l2">
-                    <h4>HELP</h4>
-                    <ul>
-                        <li>Customer Support</li>
-                        <li>Delivery Details</li>
-                        <li>Terms & Conditions</li>
-                        <li>Privacy Policy</li>
-                    </ul>   
-                </div>
-                <div class="l3">
-                    <h4>FAQ</h4>
-                    <ul>
-                        <li>Account</li>
-                        <li>Manage Deliveries</li>
-                        <li>Orders</li>
-                        <li>Payments</li>
-                    </ul>   
-                </div>
-                <div class="l4">
-                    <h4>RESOURCES</h4>
-                    <ul>
-                        <li>Free eBooks</li>
-                        <li>Development Tutorial</li>
-                        <li>How to - Blog</li>
-                        <li>Youtube Playlist</li>
-                    </ul>   
-                </div>
-            </div>
-            <hr>
-            <p>Shop.co © 2000 2023, All Rights Reserved</p>
-            </div>
+    <!-- Products -->
+    <section class="py-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="mb-0">New Arrivals</h2>
+          <a href="category.html" class="btn btn-sm btn-outline-dark">View All</a>
         </div>
 
-        <!-- Inline test script — paste just before </body> to verify search works -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script>
-  
-</script>
+        <div class="row g-4">
+          <!-- product item -->
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <img src="assets/images/black.jpeg" alt="T-shirt" class="img-fluid">
+              <div class="title">T-shirt with Tape Details</div>
+              <div class="d-flex align-items-center gap-2"><div><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star-half" style="color:var(--accent)"></i></div><small class="text-muted">4.5/5</small></div>
+              <div class="price text-dark mt-2">$120</div>
+            </div>
+          </div>
 
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <img src="assets/images/jeans.jpeg" alt="jeans" class="img-fluid">
+              <div class="title">Skinny Fit Jeans</div>
+              <div class="d-flex align-items-center gap-2"><div><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star-half" style="color:var(--accent)"></i></div><small class="text-muted">3.5/5</small></div>
+              <div class="price text-dark mt-2">$240 <del class="text-muted">$260</del></div>
+            </div>
+          </div>
 
-         <!-- jQuery (required by our main.js) -->
-   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="assets/js/main.js" type="text/javascript"></script>
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <img src="assets/images/blackred.jpeg" alt="shirt" class="img-fluid">
+              <div class="title">Checkered Shirt</div>
+              <div class="d-flex align-items-center gap-2"><div><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star-half" style="color:var(--accent)"></i></div><small class="text-muted">4.5/5</small></div>
+              <div class="price text-dark mt-2">$180</div>
+            </div>
+          </div>
 
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <img src="assets/images/orangetshirt.jpeg" alt="tshirt" class="img-fluid">
+              <div class="title">Sleeve Striped T-shirt</div>
+              <div class="d-flex align-items-center gap-2"><div><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star-half" style="color:var(--accent)"></i></div><small class="text-muted">4.5/5</small></div>
+              <div class="price text-dark mt-2">$130 <del class="text-muted">$160</del></div>
+            </div>
+          </div>
 
-       
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+        </div>
+      </div>
+    </section>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+    <!-- Browse by style -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h3 class="text-center mb-4">Browse by dress style</h3>
+        <div class="row g-4">
+          <div class="col-6 col-md-3">
+            <div class="position-relative category-card">
+              <img src="https://images.jdmagicbox.com/quickquotes/images_main/casual-grey-t-shirt-s-384311112-m2p7q.jpg" alt="casual">
+              <div class="category-name"><a href="category.html" class="btn btn-sm btn-outline-dark">Casual</a></div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="position-relative category-card">
+              <img src="https://www.wallpaperflare.com/static/183/937/164/gerard-butler-man-brunette-coat-wallpaper.jpg" alt="formal">
+              <div class="category-name"><a href="category.html" class="btn btn-sm btn-outline-dark">Formal</a></div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="position-relative category-card">
+              <img src="https://images.pexels.com/photos/6006352/pexels-photo-6006352.jpeg" alt="party">
+              <div class="category-name"><a href="category.html" class="btn btn-sm btn-outline-dark">Party</a></div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="position-relative category-card">
+              <img src="https://images.pexels.com/photos/6975777/pexels-photo-6975777.jpeg" alt="gym">
+              <div class="category-name"><a href="category.html" class="btn btn-sm btn-outline-dark">Gym</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5">
+      <div class="container">
+        <h3 class="text-center mb-4">Our happy customers</h3>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="p-3"> <i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i></div>
+              <div class="card-body">
+                <h5 class="card-title">Sarah M. <i class="fa-solid fa-circle-check text-success"></i></h5>
+                <p class="card-text">I'm blown away by the quality and style of the clothes I received from Shop.co.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="p-3"> <i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i></div>
+              <div class="card-body">
+                <h5 class="card-title">Alex K. <i class="fa-solid fa-circle-check text-success"></i></h5>
+                <p class="card-text">Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="p-3"> <i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i><i class="fa-solid fa-star" style="color:var(--accent)"></i></div>
+              <div class="card-body">
+                <h5 class="card-title">James L. <i class="fa-solid fa-circle-check text-success"></i></h5>
+                <p class="card-text">As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter mx-3">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <div>
+          <h4 class="mb-1">Stay up to date about our latest offers</h4>
+          <p class="mb-0 text-muted">Subscribe to our newsletter for exclusive deals.</p>
+        </div>
+        <form class="d-flex gap-2" onsubmit="return false;">
+          <input type="email" class="form-control" placeholder="Enter your email" required>
+          <button class="btn btn-secondary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5>SHOP.CO</h5>
+            <p>We have clothes that suit your style and which you're proud to wear.</p>
+            <div class="d-flex gap-2">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <h6>Company</h6>
+            <ul class="list-unstyled small">
+              <li>About</li>
+              <li>Features</li>
+              <li>Works</li>
+              <li>Career</li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <h6>Help</h6>
+            <ul class="list-unstyled small">
+              <li>Customer Support</li>
+              <li>Delivery Details</li>
+              <li>Terms & Conditions</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 text-md-end">
+            <p class="small mb-1">Shop.co © 2000 - 2025, All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
